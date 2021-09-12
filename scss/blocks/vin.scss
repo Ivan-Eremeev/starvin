@@ -1,0 +1,25 @@
+.vin {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 20px 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border: 1px solid $bdc;
+  .input {
+    width: 100%;
+    max-width: 390px;
+    input {
+      text-transform: uppercase;
+    }
+  }
+  &__btn {
+    margin: 0 30px;
+    white-space: nowrap;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #1F2937;
+  }
+}

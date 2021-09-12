@@ -1,0 +1,78 @@
+.filter {
+  border: 1px solid $bdc;
+  margin-bottom: 20px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 20px;
+  }
+  &__line-b {
+    border-bottom: 1px solid $bdc;
+  }
+  &__col {
+    display: flex;
+    justify-content: space-between;
+  }
+  .select {
+    margin-right: 30px;
+  }
+  .input {
+    width: 290px;
+    margin-right: 30px;
+  }
+  &__stickers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+  &__span {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9CA3AF;
+  }
+  &__sticker {
+    padding: 8px 30px 7px 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    background: #374151;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    user-select: none;
+    position: relative;
+    transition: 0.3s;
+    &:hover {
+      background-color: #6B7880;
+    }
+  }
+  &__cross {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    cursor: pointer;
+    &:after,&:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #7D838E;
+      position: absolute;
+      top: 50%;
+     left: 50%;
+    }
+    &:after {
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:before {
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+  }
+  .select {
+    width: 390px;
+  }
+}
