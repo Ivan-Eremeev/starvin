@@ -10,18 +10,24 @@
   &__col {
     &--1 {
       @include col(4);
+      @include col-md(12);
     }
     &--2 {
      @include col(3);
+     @include col-md(6);
+     @include col-xs(12);
     }
     &--3 {
       @include col(2);
+      @include col-md(6);
+      @include col-xs(12);
     }
     &--4 {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
       @include col(3);
+      @include col-md(12);
     }
   }
   &__title {
@@ -148,6 +154,39 @@
   &__not-icon {
     cursor: pointer;
     margin-left: 15px;
+  }
+  @media (max-width: $break_md) {
+    &__col {
+      &--1 {
+        margin-bottom: 40px;
+      }
+      &--4 {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    padding: 10px;
+    &__item {
+      padding: 30px 20px;
+    }
+    &__comment {
+      max-width: none;
+    }
+    &__comment .textarea textarea {
+      height: 50px;
+    }
+    &__col {
+      &--1 {
+        margin-bottom: 10px;
+      }
+      &--2 {
+        margin-bottom: 15px;
+      }
+    }
+    &__chunk {
+      margin-bottom: 10px;
+    }
   }
 }
 

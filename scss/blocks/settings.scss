@@ -213,6 +213,10 @@ body {
       margin-bottom: 0;
       user-select: none;
       cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: #36BBFB;
+      }
     }
   }
   &__arrow {

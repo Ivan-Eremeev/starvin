@@ -5,35 +5,39 @@ include ../html_blocks/header-enter.html
   .wrapper
     // vin
     form(action="#").vin
-      .input 
-        input(type="text")
-        .input__label Укажите VIN
-      button(type="submit").vin__btn.new-btn.new-btn--green Найти автомобиль
-      .vin__text PEUGEOT Partner (M59) ()12.01.2011 1.4 i 75 (TU3A) KTin 5 ueerEWP - KPACKA 'BAHKYV13 BA11T (EEJ1AH)
+      .row-grid
+        .vin__col
+          .input
+            input(type="text")
+            .input__label Укажите VIN
+          button(type="submit").vin__btn.new-btn.new-btn--green Найти автомобиль
+        .vin__col
+          .vin__text PEUGEOT Partner (M59) ()12.01.2011 1.4 i 75 (TU3A) KTin 5 ueerEWP - KPACKA 'BAHKYV13 BA11T (EEJ1AH)
     //	/vin
 
     // filter
     form(action="#").filter
       .filter__head.filter__line-b
-        .filter__col
-          .select
-            .select__trigger 
-              span Что ищем?
-              .select__arrow 
-                <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
-                </svg>
-            .select__drop
-              ul.select__list.scrollbar-inner
-                each val, index in ['Бампер задний', 'Бампер передний', 'Болт крепления усилителя бампера', 'Воздуховод бампера', 'Заглушка бампера', 'Защита заднего бампера', 'Крепеж бампера', 'Кронштейн бампера', 'Кронштейн заднего бампера', 'Кронштейн переднего бампера', 'Бампер задний', 'Бампер передний', 'Болт крепления усилителя бампера', 'Воздуховод бампера', 'Заглушка бампера', 'Защита заднего бампера']
-                  li
-                    input(id="select_" + index type="radio" name="select")
-                    label(for="select_" + index)= val
-          button(type="submit").new-btn.new-btn--blue Добавить в набор
-        .filter__col
-          .input 
-            input(type="tel").mask-tel
-          button(type="submit").new-btn.new-btn--green Сохранить подбор
+        .row-grid
+          .filter__col
+            .select
+              .select__trigger 
+                span Что ищем?
+                .select__arrow 
+                  <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
+                  </svg>
+              .select__drop
+                ul.select__list.scrollbar-inner
+                  each val, index in ['Бампер задний', 'Бампер передний', 'Болт крепления усилителя бампера', 'Воздуховод бампера', 'Заглушка бампера', 'Защита заднего бампера', 'Крепеж бампера', 'Кронштейн бампера', 'Кронштейн заднего бампера', 'Кронштейн переднего бампера', 'Бампер задний', 'Бампер передний', 'Болт крепления усилителя бампера', 'Воздуховод бампера', 'Заглушка бампера', 'Защита заднего бампера']
+                    li
+                      input(id="select_" + index type="radio" name="select")
+                      label(for="select_" + index)= val
+            button(type="submit").new-btn.new-btn--blue Добавить в набор
+          .filter__col
+            .input 
+              input(type="tel").mask-tel
+            button(type="submit").new-btn.new-btn--green Сохранить подбор
       .filter__stickers
         .filter__span Также подобрать:
         .filter__sticker
@@ -259,10 +263,122 @@ include ../html_blocks/header-enter.html
           .row-grid
             .scheme__col 
               .scheme__img 
-                img(src="img/", alt="")
-                p 
+                img(src="img/scheme_2.jpg", alt="")
+                p Узел 11_3461: Ременный привод водяной помпы/генератора
+              .scheme__mouse 
+                img(src="img/mouse.svg", alt="")
             .scheme__col 
               table.scheme__table
+                tr
+                  th №
+                  th OEM
+                  th Наименование детали
+                  th
+                  th
+                tr 
+                  td 01
+                  td 11287786075
+                  td Клиновой рифленный ремень 
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 02
+                  td 11287786880
+                  td Натяжитель ремня 
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 03
+                  td 11517789351
+                  td Винт Торх с буртиком 
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 04
+                  td 11517789351
+                  td Винт Торх с буртиком 
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 05
+                  td 11517789351
+                  td Клиновой рифленный ремень с очень длинным названием детали 
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 11287786075
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 215648
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 11287786075
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 215648
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 11287786075
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 215648
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 11287786075
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
+                tr 
+                  td 5568454
+                  td 215648
+                  td Клиновой рифленный ремень  
+                  td
+                    button(type="submit") Добавить
+                  td 
+                    img(src="img/quest.svg", alt="")
           .modal_close.js-modal_close
     // /modal scheme
 

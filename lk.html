@@ -115,102 +115,110 @@
 	<div class="wrapper">
 		<!-- vin-->
 		<form class="vin" action="#">
-			<div class="input"> 
-				<input type="text"/>
-				<div class="input__label">Укажите VIN</div>
+			<div class="row-grid">
+				<div class="vin__col">
+					<div class="input">
+						<input type="text"/>
+						<div class="input__label">Укажите VIN</div>
+					</div>
+					<button class="vin__btn new-btn new-btn--green" type="submit">Найти автомобиль</button>
+				</div>
+				<div class="vin__col">
+					<div class="vin__text">PEUGEOT Partner (M59) ()12.01.2011 1.4 i 75 (TU3A) KTin 5 ueerEWP - KPACKA 'BAHKYV13 BA11T (EEJ1AH)</div>
+				</div>
 			</div>
-			<button class="vin__btn new-btn new-btn--green" type="submit">Найти автомобиль</button>
-			<div class="vin__text">PEUGEOT Partner (M59) ()12.01.2011 1.4 i 75 (TU3A) KTin 5 ueerEWP - KPACKA 'BAHKYV13 BA11T (EEJ1AH)</div>
 		</form>
 		<!--	/vin-->
 		<!-- filter-->
 		<form class="filter" action="#">
 			<div class="filter__head filter__line-b">
-				<div class="filter__col">
-					<div class="select">
-						<div class="select__trigger"> <span>Что ищем?</span>
-							<div class="select__arrow">
-								 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+				<div class="row-grid">
+					<div class="filter__col">
+						<div class="select">
+							<div class="select__trigger"> <span>Что ищем?</span>
+								<div class="select__arrow">
+									 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
 </svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<ul class="select__list scrollbar-inner">
+									<li>
+										<input id="select_0" type="radio" name="select"/>
+										<label for="select_0">Бампер задний</label>
+									</li>
+									<li>
+										<input id="select_1" type="radio" name="select"/>
+										<label for="select_1">Бампер передний</label>
+									</li>
+									<li>
+										<input id="select_2" type="radio" name="select"/>
+										<label for="select_2">Болт крепления усилителя бампера</label>
+									</li>
+									<li>
+										<input id="select_3" type="radio" name="select"/>
+										<label for="select_3">Воздуховод бампера</label>
+									</li>
+									<li>
+										<input id="select_4" type="radio" name="select"/>
+										<label for="select_4">Заглушка бампера</label>
+									</li>
+									<li>
+										<input id="select_5" type="radio" name="select"/>
+										<label for="select_5">Защита заднего бампера</label>
+									</li>
+									<li>
+										<input id="select_6" type="radio" name="select"/>
+										<label for="select_6">Крепеж бампера</label>
+									</li>
+									<li>
+										<input id="select_7" type="radio" name="select"/>
+										<label for="select_7">Кронштейн бампера</label>
+									</li>
+									<li>
+										<input id="select_8" type="radio" name="select"/>
+										<label for="select_8">Кронштейн заднего бампера</label>
+									</li>
+									<li>
+										<input id="select_9" type="radio" name="select"/>
+										<label for="select_9">Кронштейн переднего бампера</label>
+									</li>
+									<li>
+										<input id="select_10" type="radio" name="select"/>
+										<label for="select_10">Бампер задний</label>
+									</li>
+									<li>
+										<input id="select_11" type="radio" name="select"/>
+										<label for="select_11">Бампер передний</label>
+									</li>
+									<li>
+										<input id="select_12" type="radio" name="select"/>
+										<label for="select_12">Болт крепления усилителя бампера</label>
+									</li>
+									<li>
+										<input id="select_13" type="radio" name="select"/>
+										<label for="select_13">Воздуховод бампера</label>
+									</li>
+									<li>
+										<input id="select_14" type="radio" name="select"/>
+										<label for="select_14">Заглушка бампера</label>
+									</li>
+									<li>
+										<input id="select_15" type="radio" name="select"/>
+										<label for="select_15">Защита заднего бампера</label>
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="select__drop">
-							<ul class="select__list scrollbar-inner">
-								<li>
-									<input id="select_0" type="radio" name="select"/>
-									<label for="select_0">Бампер задний</label>
-								</li>
-								<li>
-									<input id="select_1" type="radio" name="select"/>
-									<label for="select_1">Бампер передний</label>
-								</li>
-								<li>
-									<input id="select_2" type="radio" name="select"/>
-									<label for="select_2">Болт крепления усилителя бампера</label>
-								</li>
-								<li>
-									<input id="select_3" type="radio" name="select"/>
-									<label for="select_3">Воздуховод бампера</label>
-								</li>
-								<li>
-									<input id="select_4" type="radio" name="select"/>
-									<label for="select_4">Заглушка бампера</label>
-								</li>
-								<li>
-									<input id="select_5" type="radio" name="select"/>
-									<label for="select_5">Защита заднего бампера</label>
-								</li>
-								<li>
-									<input id="select_6" type="radio" name="select"/>
-									<label for="select_6">Крепеж бампера</label>
-								</li>
-								<li>
-									<input id="select_7" type="radio" name="select"/>
-									<label for="select_7">Кронштейн бампера</label>
-								</li>
-								<li>
-									<input id="select_8" type="radio" name="select"/>
-									<label for="select_8">Кронштейн заднего бампера</label>
-								</li>
-								<li>
-									<input id="select_9" type="radio" name="select"/>
-									<label for="select_9">Кронштейн переднего бампера</label>
-								</li>
-								<li>
-									<input id="select_10" type="radio" name="select"/>
-									<label for="select_10">Бампер задний</label>
-								</li>
-								<li>
-									<input id="select_11" type="radio" name="select"/>
-									<label for="select_11">Бампер передний</label>
-								</li>
-								<li>
-									<input id="select_12" type="radio" name="select"/>
-									<label for="select_12">Болт крепления усилителя бампера</label>
-								</li>
-								<li>
-									<input id="select_13" type="radio" name="select"/>
-									<label for="select_13">Воздуховод бампера</label>
-								</li>
-								<li>
-									<input id="select_14" type="radio" name="select"/>
-									<label for="select_14">Заглушка бампера</label>
-								</li>
-								<li>
-									<input id="select_15" type="radio" name="select"/>
-									<label for="select_15">Защита заднего бампера</label>
-								</li>
-							</ul>
+						<button class="new-btn new-btn--blue" type="submit">Добавить в набор</button>
+					</div>
+					<div class="filter__col">
+						<div class="input"> 
+							<input class="mask-tel" type="tel"/>
 						</div>
+						<button class="new-btn new-btn--green" type="submit">Сохранить подбор</button>
 					</div>
-					<button class="new-btn new-btn--blue" type="submit">Добавить в набор</button>
-				</div>
-				<div class="filter__col">
-					<div class="input"> 
-						<input class="mask-tel" type="tel"/>
-					</div>
-					<button class="new-btn new-btn--green" type="submit">Сохранить подбор</button>
 				</div>
 			</div>
 			<div class="filter__stickers">
@@ -481,12 +489,138 @@
 				<form class="modal_content" action="#">
 					<div class="row-grid">
 						<div class="scheme__col"> 
-							<div class="scheme__img"> <img src="img/" alt=""/>
-								<p> </p>
+							<div class="scheme__img"> <img src="img/scheme_2.jpg" alt=""/>
+								<p>Узел 11_3461: Ременный привод водяной помпы/генератора</p>
 							</div>
+							<div class="scheme__mouse"> <img src="img/mouse.svg" alt=""/></div>
 						</div>
 						<div class="scheme__col"> 
-							<table class="scheme__table"></table>
+							<table class="scheme__table">
+								<tr>
+									<th>№</th>
+									<th>OEM</th>
+									<th>Наименование детали</th>
+									<th></th>
+									<th></th>
+								</tr>
+								<tr> 
+									<td>01</td>
+									<td>11287786075</td>
+									<td>Клиновой рифленный ремень </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>02</td>
+									<td>11287786880</td>
+									<td>Натяжитель ремня </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>03</td>
+									<td>11517789351</td>
+									<td>Винт Торх с буртиком </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>04</td>
+									<td>11517789351</td>
+									<td>Винт Торх с буртиком </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>05</td>
+									<td>11517789351</td>
+									<td>Клиновой рифленный ремень с очень длинным названием детали </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>11287786075</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>215648</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>11287786075</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>215648</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>11287786075</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>215648</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>11287786075</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+								<tr> 
+									<td>5568454</td>
+									<td>215648</td>
+									<td>Клиновой рифленный ремень  </td>
+									<td>
+										<button type="submit">Добавить</button>
+									</td>
+									<td> <img src="img/quest.svg" alt=""/></td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div class="modal_close js-modal_close"></div>
