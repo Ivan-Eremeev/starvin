@@ -1,6 +1,5 @@
 .vin {
   padding: 50px 20px 40px;
-  margin-top: 25px;
   margin-bottom: 20px;
   border: 1px solid $bdc;
   &__col {
@@ -11,12 +10,12 @@
   .input {
     width: 100%;
     max-width: 390px;
+    margin-right: 30px;
     input {
       text-transform: uppercase;
     }
   }
   &__btn {
-    margin: 0 30px;
     white-space: nowrap;
   }
   &__text {
@@ -43,10 +42,10 @@
     .input {
       max-width: none;
       margin-bottom: 10px;
+      margin-right: 0;
     }
     &__btn {
       width: 100%;
-      margin-left: 0;
     }
 
   }

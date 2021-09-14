@@ -20,11 +20,13 @@
     font-size: 14px;
     font-weight: bold;
     color: #fff;
+    white-space: nowrap;
   }
   &__name {
     margin: 0 10px;
     cursor: pointer;
     user-select: none;
+    white-space: nowrap;
     &:hover, &.is-active {
       color: #36BBFB;
     }

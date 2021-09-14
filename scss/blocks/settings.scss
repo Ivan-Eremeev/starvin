@@ -48,7 +48,7 @@ body {
   opacity: 1;
 }
 .page {
-  padding-top: 100px;
+  padding-top: 84px;
   flex-grow: 1;
   @media (max-width: 991px) {
     padding-top: 140px;
@@ -83,6 +83,11 @@ body {
     transition: 0.1s;
     &:focus {
       border-color: $blue;
+      ~ .input__drop {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
   &__label {
@@ -91,6 +96,35 @@ body {
     position: absolute;
     top: -25px;
     left: 0;
+  }
+  &__drop {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid $bdcD;
+    border-top: none;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+  &__list {
+    max-height: 320px;
+    font-size: 15px;
+    color: #1F2937;
+    overflow-y: auto;
+    li {
+      padding: 5px 20px;
+      margin-bottom: 0;
+      user-select: none;
+      cursor: pointer;
+      transition: 0.1s;
+      &:hover {
+        background-color: #36BBFB;
+        color: #fff;
+      }
+    }
   }
 }
 .new-btn {
@@ -233,6 +267,17 @@ body {
     right: 0;
   }
 }
+.navbar .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (max-width: 575px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.nav-link {
+  white-space: nowrap;
+}
 .tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
   max-width: 120px;
 	background: rgba(31,41,55,.7);
@@ -257,5 +302,22 @@ body {
 }
 .scrollbar-inner > .scroll-element:hover .scroll-bar {
   background-color: #cdcfd3;
+}
+.success {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: $green;
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,-100px);
+  z-index: 1000;
+  transition: 0.5s;
+  text-align: center;
+  &.open {
+    transform: translate(-50%,0);
+  }
 }
 /* /settings */

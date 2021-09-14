@@ -2,7 +2,7 @@
   border: 1px solid $bdc;
   margin-bottom: 20px;
   &__head {
-    padding: 30px 20px 20px;
+    padding: 40px 20px 20px;
   }
   &__line-b {
     border-bottom: 1px solid $bdc;
@@ -15,10 +15,10 @@
       justify-content: flex-end;
     }
   }
-  .select {
+  &__search {
     margin-right: 30px;
   }
-  .input {
+  &__tel {
     width: 100%;
     max-width: 290px;
     margin-right: 30px;
@@ -35,20 +35,22 @@
     color: #9CA3AF;
   }
   &__sticker {
-    padding: 8px 30px 7px 17px;
+    padding: 8px 17px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
-    background: #374151;
     border-radius: 50px;
+    background-color: #6B7880;
     font-size: 12px;
     font-weight: normal;
     color: #fff;
     user-select: none;
+    cursor: pointer;
     position: relative;
     transition: 0.3s;
     &:hover {
-      background-color: #6B7880;
+      background: #374151;
+
     }
   }
   &__cross {
@@ -75,7 +77,7 @@
       transform: translate(-50%,-50%) rotate(-45deg);
     }
   }
-  .select {
+  &__search {
     width: 100%;
     max-width: 390px;
   }
@@ -86,7 +88,7 @@
         justify-content: flex-start;
       }
     }
-    .input {
+    &__tel {
       max-width: 390px;
     }
   }
@@ -98,12 +100,12 @@
     &__col {
       flex-wrap: wrap;
     }
-    .input {
+    &__tel {
       max-width: none;
       margin-bottom: 10px;
       margin-right: 0;
     }
-    .select {
+    &__search {
       max-width: none;
       margin-bottom: 10px;
       margin-right: 0;

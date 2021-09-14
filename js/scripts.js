@@ -133,38 +133,38 @@ $(document).ready(function () {
   // }
   // tabs($('.js-tabs'));
 
-  // // Аккордеон
-  // function accordion() {
-  // 	if ($('.accordion').length) {
-  // 		$('.accordion').each(function () {
-  // 			var accordion = $(this),
-  // 				trigger = accordion.find('.accordion__trigger'),
-  // 				time = 300;
-  // 			trigger.on('click', function () {
-  // 				var $thisTrigger = $(this),
-  // 					data = $thisTrigger.data('trigger');
-  // 				if (!$thisTrigger.hasClass('active')) {
-  // 					$thisTrigger.addClass('active');
-  // 					accordion.find('#' + data).stop().slideDown(
-  // 						time,
-  // 						function () {
-  // 							$(this).addClass('open')
-  // 						}
-  // 					);
-  // 				} else {
-  // 					$thisTrigger.removeClass('active');
-  // 					accordion.find('#' + data).stop().slideUp(
-  // 						time,
-  // 						function () {
-  // 							$(this).removeClass('open')
-  // 						}
-  // 					);
-  // 				}
-  // 			})
-  // 		})
-  // 	}
-  // }
-  // accordion();
+  // Аккордеон
+  function accordion() {
+  	if ($('.accordion').length) {
+  		$('.accordion').each(function () {
+  			var accordion = $(this),
+  				trigger = accordion.find('.accordion__trigger'),
+  				time = 300;
+  			trigger.on('click', function () {
+  				var $thisTrigger = $(this),
+  					data = $thisTrigger.data('trigger');
+  				if (!$thisTrigger.hasClass('active')) {
+  					$thisTrigger.addClass('active');
+  					accordion.find('#' + data).stop().slideDown(
+  						time,
+  						function () {
+  							$(this).addClass('open')
+  						}
+  					);
+  				} else {
+  					$thisTrigger.removeClass('active');
+  					accordion.find('#' + data).stop().slideUp(
+  						time,
+  						function () {
+  							$(this).removeClass('open')
+  						}
+  					);
+  				}
+  			})
+  		})
+  	}
+  }
+  accordion();
 
   // Модальное окно
   function modal(modal) {
@@ -672,8 +672,22 @@ $(document).ready(function () {
   	})
   }
   dropBlock($('.js-drop-btn'));
-  dropBlock($('.js-drop-btn-comment'), true);
+  // dropBlock($('.js-drop-btn-comment'), true);
 
+  // Выпадайка textarea
+  function dropTextarea(btn) {
+    btn.on('click', function () {
+      var $this = $(this),
+          drop = $('#' + $this.data('drop'));
+      if (drop.find('textarea').val() == '') {
+        $this.toggleClass('is-active');
+        drop.toggleClass('open');
+      }else {
+        return false;
+      }
+    })
+  }
+  dropTextarea($('.js-drop-btn-comment'));
 
   // Inputmask
   if ($('.mask-tel').length) {
@@ -681,8 +695,8 @@ $(document).ready(function () {
   }
   
   // Tooltipster
-  if ($('.tooltip').length) {
-    $('.tooltip').tooltipster({
+  if ($('.tooltipster').length) {
+    $('.tooltipster').tooltipster({
       theme: 'tooltipster-noir',
       contentCloning: true,
       side: 'bottom'
@@ -725,6 +739,35 @@ $(document).ready(function () {
     })
   }
   select();
+
+  // Вставка текста в input из выпадающего списка
+  function inputEntenText() {
+    $('.input-search').each(function () {
+      var inputBlock = $(this),
+          input = inputBlock.find('input'),
+          li = inputBlock.find('.input__list li');
+      li.on('click', function () {
+        console.log(li);
+        input.val($(this).text());
+      })
+    })
+  }
+  inputEntenText();
+
+  // Скопировать текст в буфер при клике
+  function copyText() {
+    var block = $('.copy-text'),
+        successBlock = $('<div class="success">Номер скопирован</div>');
+    $('body').prepend(successBlock);
+    block.on('click', function () {
+      navigator.clipboard.writeText($(this).text());
+      successBlock.addClass('open');
+      setTimeout(function () {
+        successBlock.removeClass('open');
+      }, 1500)
+    })
+  }
+  copyText();
 
   // // JQuery Slider // Ползунок
   // function JQuerySlider() {
