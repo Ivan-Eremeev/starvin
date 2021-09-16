@@ -96,6 +96,10 @@ body {
     position: absolute;
     top: -25px;
     left: 0;
+    &--dark {
+      color: #4B5563;
+      font-weight: 600;
+    }
   }
   &__drop {
     width: 100%;
@@ -174,9 +178,10 @@ body {
   }
 }
 .textarea {
+  position: relative;
   textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 12px 15px !important;
     border: 1px solid $bdcD;
     resize: none;
     outline: none;
@@ -186,6 +191,20 @@ body {
     &:focus {
       border-color: $blue;
     }
+  }
+  &__label {
+    font-size: 14px;
+    color: #9CA3AF;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    &--dark {
+      color: #4B5563;
+      font-weight: 600;
+    }
+  }
+  .scroll-textarea {
+    border-color: $bdcD;
   }
 }
 .select {
@@ -202,6 +221,7 @@ body {
     color: #1F2937;
     user-select: none;
     cursor: pointer;
+    position: relative;
     span {
       white-space: nowrap;
       overflow: hidden;
@@ -261,6 +281,17 @@ body {
       transform: rotate(180deg);
     }
   }
+  &__label {
+    font-size: 14px;
+    color: #9CA3AF;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    &--dark {
+      color: #4B5563;
+      font-weight: 600;
+    }
+  }
 }
 .navbar .navbar-toggler {
   @media (max-width: $break_sm) {
@@ -278,20 +309,6 @@ body {
 .nav-link {
   white-space: nowrap;
 }
-.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
-  max-width: 120px;
-	background: rgba(31,41,55,.7);
-	border: none;
-	border-radius: 0;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-content {
-	color: #fff;
-	padding: 6px;
-}
-.tooltipster-sidetip.tooltipster-noir.tooltipster-bottom .tooltipster-arrow-background{border-bottom-color:#fff;top:4px}
 .scrollbar-inner > .scroll-element .scroll-element_track {
   background: transparent;
 }
@@ -318,6 +335,59 @@ body {
   text-align: center;
   &.open {
     transform: translate(-50%,0);
+  }
+}
+.switch {
+  input {
+    display: none;
+    &:checked {
+      + label {
+        background-color: $green;
+        &:after {
+          content: '';
+          display: block;
+          transform: translate(21px,0);
+        }
+      }
+    }
+  }
+  label {
+    display: flex;
+    width: 44px;
+    height: 23px;
+    border-radius: 50px;
+    margin-bottom: 0;
+    background-color: $bdc;
+    border: 1px solid $bdcD;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:after {
+      content: '';
+      display: block;
+      width: 21px;
+      height: 21px;
+      background-color: #fff;
+      border: 1px solid $bdcD;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.3s;
+    }
+  }
+}
+.maw330 {
+  max-width: 330px;
+  @media (max-width: $break_xs) {
+    max-width: none;
+  }
+}
+.maw220 {
+  max-width: 220px;
+  @media (max-width: $break_xs) {
+    max-width: none;
   }
 }
 /* /settings */

@@ -1,0 +1,39 @@
+.lk-info {
+  padding-bottom: 50px;
+  border-bottom: 1px solid $bdc;
+  margin-bottom: 50px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-top: -40px;
+  }
+  &__col {
+    max-width: 220px;
+    margin-left: 20px;
+  }
+  .input {
+    margin-top: 40px;
+  }
+  .new-btn {
+    margin-top: 26px;
+  }
+  @media (max-width: $break_md) {
+    &__row {
+      justify-content: flex-start;
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    &__row {
+      flex-wrap: wrap;
+      margin-top: -60px;
+    }
+    &__col {
+      width: 100%;
+      margin-top: 20px;
+      max-width: none;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+include ../html_blocks/header-enter.html
+
+.page
+
+  .container
+
+    // tabs
+    .js-tabs.tabs
+      .tabs__head
+        .tabs__title
+          span.js-tabs-content(data-trigger="tab_1").open Личный кабинет
+          span.js-tabs-content(data-trigger="tab_2") Настройки
+          span.js-tabs-content(data-trigger="tab_3") Платежи и баланс
+        ul.tabs__triggers
+          li.tabs__trigger.js-tabs-trigger(data-content="tab_1").active Личные данные   
+          li.tabs__trigger.js-tabs-trigger(data-content="tab_2") Настройки
+          li.tabs__trigger.js-tabs-trigger(data-content="tab_3") Платежи и баланс
+      .tabs__contents
+        div.tabs__content.js-tabs-content(data-trigger="tab_1").open
+          .row-grid 
+            .tabs__col 
+              // lk-info
+              .lk-info
+                .lk-info__row
+                  form(action="$").lk-info__col
+                    .input 
+                      input(type="text")
+                      .input__label.input__label--dark Имя
+                    .input 
+                      input(type="tel")
+                      .input__label.input__label--dark Телефон
+                    button(type="submit").new-btn.new-btn--green Сохранить
+                  form(action="$").lk-info__col
+                    .input 
+                      input(type="text")
+                      .input__label.input__label--dark Старый пароль
+                    .input 
+                      input(type="text")
+                      .input__label.input__label--dark Новый пароль
+                    button(type="submit").new-btn.new-btn--green Сменить пароль
+              //	/lk-info
+
+              // requisites
+              .requisites
+                .requisites__head 
+                  .requisites__title Добавить юридический адрес
+                  img(src="img/info.svg", alt="" title="Какая то информация").requisites__quest.tooltipster
+                  .switch.js-switch(data-block="#switchBlock_1")
+                    input#switch_1(type="checkbox")
+                    label(for="switch_1") 
+                form(action="#")#switchBlock_1.requisites__form
+                  .select
+                    .select__trigger 
+                      span
+                      .select__arrow 
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
+                        </svg>
+                      .select__label.select__label--dark Форма
+                    .select__drop
+                      ul.select__list.scrollbar-inner
+                        each val, index in ['Индивидуальный предприниматель', 'ООО', 'Физ. лицо']
+                          li
+                            input(id="select_" + index type="radio" name="select")
+                            label(for="select_" + index)= val
+                  .input 
+                    input(type="text")
+                    .input__label.input__label--dark ИНН
+                  .input 
+                    input(type="text")
+                    .input__label.input__label--dark Название
+                  .input 
+                    input(type="text")
+                    .input__label.input__label--dark ОГРН
+                  .input 
+                    input(type="text")
+                    .input__label.input__label--dark Счет
+                  .textarea 
+                    textarea.scrollbar-inner
+                    .textarea__label.textarea__label--dark Юр. адрес
+              //	/requisites
+            .tabs__col
+              .tabs__img
+                img(src="img/img-lk_1.jpg", alt="")
+        div.tabs__content.js-tabs-content(data-trigger="tab_2")
+          .row-grid 
+            .tabs__col 
+              // configuration
+              .configuration
+                .configuration__title Подключение поставщиков
+                  img(src="img/info.svg", alt="" title="С нами, рутинная работа с автокаталогами различных автомобильных брендов.").tooltipster
+
+                .configuration__block 
+                  .configuration__name 
+                    | Shate-M
+                    .switch.js-switch(data-block="#switchBlock_2")
+                      input#switch_2(type="checkbox")
+                      label(for="switch_2") 
+                  form(action="#").configuration__form#switchBlock_2
+                    .input.maw330
+                      input(type="text")
+                      .input__label.input__label--dark Ввести API ключ
+                    .input.maw220
+                      input(type="text")
+                      .input__label.input__label--dark Логин
+                    .input.maw220
+                      input(type="text")
+                      .input__label.input__label--dark Пароль
+
+                .configuration__block 
+                  .configuration__name 
+                    | Автотрейд
+                    .switch.js-switch(data-block="#switchBlock_3")
+                      input#switch_3(type="checkbox")
+                      label(for="switch_3") 
+                  form(action="#").configuration__form#switchBlock_3
+                    .input.maw330
+                      input(type="text")
+                      .input__label.input__label--dark Ввести API ключ
+                    .input.maw220
+                      input(type="text")
+                      .input__label.input__label--dark Логин
+                    .input.maw220
+                      input(type="text")
+                      .input__label.input__label--dark Пароль
+
+                .configuration__block 
+                  .configuration__name 
+                    | РОССКО
+                    .switch.js-switch(data-block="#switchBlock_4")
+                      input#switch_4(type="checkbox")
+                      label(for="switch_4") 
+                  form(action="#").configuration__form#switchBlock_4
+                    .input.maw330
+                      input(type="text")
+                      .input__label.input__label--dark Ввести API ключ
+                    .input.maw220
+                      input(type="text")
+                      .input__label.input__label--dark Логин
+                    .input.maw220
+                      input(type="text")
+                      .input__label.input__label--dark Пароль
+              //	/configuration
+            .tabs__col
+        div.tabs__content.js-tabs-content(data-trigger="tab_3")
+          .row-grid 
+            .tabs__col 
+            .tabs__col
+              .tabs__img
+                img(src="img/img-lk_2.jpg", alt="")
+    // /tabs
+
+include ../html_blocks/footer.html

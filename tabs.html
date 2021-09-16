@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>STARVIN-Landing Page</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+  <link rel="stylesheet" href="css/libs/jquery.scrollbar.css">
+  <link rel="stylesheet" href="css/style-template.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="homepage">
+
+  <!--====== Scroll To Top Area Start ======-->
+  <div id="scrollUp" title="Scroll To Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <!--====== Scroll To Top Area End ======-->
+
+  <div class="main">
+    <!-- ***** Header Start ***** -->
+    <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
+      <div class="container position-relative">
+        <a class="navbar-brand" href="index.html">
+          <img class="navbar-brand-regular" src="img/logo.svg" alt="brand-logo">
+          <img class="navbar-brand-sticky" src="img/logo.svg" alt="sticky brand-logo">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="user-nav-wrap">
+
+          <div class="navbar-inner">
+            <!--  Mobile Menu Toggler -->
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav>
+              <ul class="navbar-nav" id="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#home">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#features">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#vozmojnosti">Возможности</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#pricing">Тарифы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#">История подбора</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="user">
+            <div class="user__head">
+              <p class="user__text">История подбора</p>
+              <div class="user__container">
+                <div class="user__btn">500 VIN</div>
+                <div class="user__name js-drop-btn" data-drop="userDrop">User5586</div>
+                <div class="user__icon">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.82997 4.42004L7.49998 5.71004L9.29998 7.51005L10.47 8.00008H0.5V10H10.45L9.26 10.5301L7.49 12.2901L8.84 13.57L13.41 9.00006L8.82997 4.42004Z"
+                      fill="#9CA3AF" />
+                    <path d="M6.50002 0H4.5V2.00002V3.99998H6.50002V2.00002H15.5V16H6.50002V14H4.5V16V18H6.50002H17.5V0H6.50002Z"
+                      fill="#9CA3AF" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div id="userDrop" class="user__drop">
+              <ul class="user__list">
+                <li>
+                  <a href="#">Поиск по VIN</a>
+                </li>
+                <li>
+                  <a href="#">История подбора</a>
+                </li>
+                <li>
+                  <a href="#">Личные данные</a>
+                </li>
+                <li>
+                  <a href="#">Настройки</a>
+                </li>
+                <li>
+                  <a href="#">Платежи и баланс</a>
+                </li>
+                <li>
+                  <a href="#">Выход</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </header>
+  <!-- ***** Header End ***** -->
+<div class="page">
+	<div class="container">
+		<!-- tabs-->
+		<div class="js-tabs tabs">
+			<div class="tabs__head">
+				<div class="tabs__title"><span class="js-tabs-content open" data-trigger="tab_1">Личный кабинет</span><span class="js-tabs-content" data-trigger="tab_2">Настройки</span><span class="js-tabs-content" data-trigger="tab_3">Платежи и баланс</span></div>
+				<ul class="tabs__triggers">
+					<li class="tabs__trigger js-tabs-trigger active" data-content="tab_1">Личные данные   </li>
+					<li class="tabs__trigger js-tabs-trigger" data-content="tab_2">Настройки</li>
+					<li class="tabs__trigger js-tabs-trigger" data-content="tab_3">Платежи и баланс</li>
+				</ul>
+			</div>
+			<div class="tabs__contents">
+				<div class="tabs__content js-tabs-content open" data-trigger="tab_1">
+					<div class="row-grid"> 
+						<div class="tabs__col"> 
+							<!-- lk-info-->
+							<div class="lk-info">
+								<div class="lk-info__row">
+									<form class="lk-info__col" action="$">
+										<div class="input"> 
+											<input type="text"/>
+											<div class="input__label input__label--dark">Имя</div>
+										</div>
+										<div class="input"> 
+											<input type="tel"/>
+											<div class="input__label input__label--dark">Телефон</div>
+										</div>
+										<button class="new-btn new-btn--green" type="submit">Сохранить</button>
+									</form>
+									<form class="lk-info__col" action="$">
+										<div class="input"> 
+											<input type="text"/>
+											<div class="input__label input__label--dark">Старый пароль</div>
+										</div>
+										<div class="input"> 
+											<input type="text"/>
+											<div class="input__label input__label--dark">Новый пароль</div>
+										</div>
+										<button class="new-btn new-btn--green" type="submit">Сменить пароль</button>
+									</form>
+								</div>
+							</div>
+							<!--	/lk-info-->
+							<!-- requisites-->
+							<div class="requisites">
+								<div class="requisites__head"> 
+									<div class="requisites__title">Добавить юридический адрес</div><img class="requisites__quest tooltipster" src="img/info.svg" alt="" title="Какая то информация"/>
+									<div class="switch js-switch" data-block="#switchBlock_1">
+										<input id="switch_1" type="checkbox"/>
+										<label for="switch_1"> </label>
+									</div>
+								</div>
+								<form class="requisites__form" action="#" id="switchBlock_1">
+									<div class="select">
+										<div class="select__trigger"> <span></span>
+											<div class="select__arrow">
+												 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
+</svg>
+											</div>
+											<div class="select__label select__label--dark">Форма</div>
+										</div>
+										<div class="select__drop">
+											<ul class="select__list scrollbar-inner">
+												<li>
+													<input id="select_0" type="radio" name="select"/>
+													<label for="select_0">Индивидуальный предприниматель</label>
+												</li>
+												<li>
+													<input id="select_1" type="radio" name="select"/>
+													<label for="select_1">ООО</label>
+												</li>
+												<li>
+													<input id="select_2" type="radio" name="select"/>
+													<label for="select_2">Физ. лицо</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="input"> 
+										<input type="text"/>
+										<div class="input__label input__label--dark">ИНН</div>
+									</div>
+									<div class="input"> 
+										<input type="text"/>
+										<div class="input__label input__label--dark">Название</div>
+									</div>
+									<div class="input"> 
+										<input type="text"/>
+										<div class="input__label input__label--dark">ОГРН</div>
+									</div>
+									<div class="input"> 
+										<input type="text"/>
+										<div class="input__label input__label--dark">Счет</div>
+									</div>
+									<div class="textarea"> 
+										<textarea class="scrollbar-inner"></textarea>
+										<div class="textarea__label textarea__label--dark">Юр. адрес</div>
+									</div>
+								</form>
+							</div>
+							<!--	/requisites-->
+						</div>
+						<div class="tabs__col">
+							<div class="tabs__img"><img src="img/img-lk_1.jpg" alt=""/></div>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__content js-tabs-content" data-trigger="tab_2">
+					<div class="row-grid"> 
+						<div class="tabs__col"> 
+							<!-- configuration-->
+							<div class="configuration">
+								<div class="configuration__title">Подключение поставщиков<img class="tooltipster" src="img/info.svg" alt="" title="С нами, рутинная работа с автокаталогами различных автомобильных брендов."/></div>
+								<div class="configuration__block"> 
+									<div class="configuration__name">
+										 Shate-M
+										<div class="switch js-switch" data-block="#switchBlock_2">
+											<input id="switch_2" type="checkbox"/>
+											<label for="switch_2"> </label>
+										</div>
+									</div>
+									<form class="configuration__form" action="#" id="switchBlock_2">
+										<div class="input maw330">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Ввести API ключ</div>
+										</div>
+										<div class="input maw220">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Логин</div>
+										</div>
+										<div class="input maw220">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Пароль</div>
+										</div>
+									</form>
+								</div>
+								<div class="configuration__block"> 
+									<div class="configuration__name">
+										 Автотрейд
+										<div class="switch js-switch" data-block="#switchBlock_3">
+											<input id="switch_3" type="checkbox"/>
+											<label for="switch_3"> </label>
+										</div>
+									</div>
+									<form class="configuration__form" action="#" id="switchBlock_3">
+										<div class="input maw330">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Ввести API ключ</div>
+										</div>
+										<div class="input maw220">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Логин</div>
+										</div>
+										<div class="input maw220">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Пароль</div>
+										</div>
+									</form>
+								</div>
+								<div class="configuration__block"> 
+									<div class="configuration__name">
+										 РОССКО
+										<div class="switch js-switch" data-block="#switchBlock_4">
+											<input id="switch_4" type="checkbox"/>
+											<label for="switch_4"> </label>
+										</div>
+									</div>
+									<form class="configuration__form" action="#" id="switchBlock_4">
+										<div class="input maw330">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Ввести API ключ</div>
+										</div>
+										<div class="input maw220">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Логин</div>
+										</div>
+										<div class="input maw220">
+											<input type="text"/>
+											<div class="input__label input__label--dark">Пароль</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!--	/configuration-->
+						</div>
+						<div class="tabs__col"></div>
+					</div>
+				</div>
+				<div class="tabs__content js-tabs-content" data-trigger="tab_3">
+					<div class="row-grid"> 
+						<div class="tabs__col"> </div>
+						<div class="tabs__col">
+							<div class="tabs__img"><img src="img/img-lk_2.jpg" alt=""/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /tabs-->
+	</div>
+</div>            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img class="logo" src="img/logo_footer.svg" alt="">
+                                </a>
+                                <p class="mt-2 mb-3">Система автоматического подбора OEM</p>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                           
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                              
+                                <ul>
+                                    <li class="py-2"><a href="#">Конфиденциальность</a></li>
+                                    <li class="py-2"><a href="#">Соглашение об использовании сайта</a></li>
+                                    <li class="py-2"><a href="#">Контакты</a></li>
+                                 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                            
+                                <!-- Store Buttons -->
+                                <div class="button-group store-buttons store-black d-flex flex-wrap">
+                                    <a href="#">
+                                        <img src="img/google-play-black.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/app-store-black.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">&copy;2021. Все права защищены.</div>  
+									</div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </footer>
+	
+        <!--====== Footer Area End ======-->
+ </div>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.min.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/libs/jquery.inputmask.min.js"></script>
+    <script src="js/libs/tooltipster.bundle.min.js"></script>
+    <script src="js/libs/jquery.scrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

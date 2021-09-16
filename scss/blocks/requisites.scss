@@ -1,0 +1,46 @@
+.requisites {
+  &__head {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1F2937;
+    margin-right: 10px;
+  }
+  &__quest {
+    margin-right: 50px;
+  }
+  .switch {
+
+  }
+  &__form {
+    display: none;
+    max-width: 330px;
+    &.open {
+      display: block;
+    }
+  }
+  .select {
+    margin-top: 62px;
+  }
+  .input {
+    margin-top: 43px;
+  }
+  .textarea {
+    margin-top: 43px;
+    .scroll-content {
+      height: 85px !important;
+    }
+    textarea {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    .select {
+      margin-top: 50px;
+    }
+  }
+}

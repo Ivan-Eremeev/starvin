@@ -133,6 +133,29 @@ $(document).ready(function () {
   // }
   // tabs($('.js-tabs'));
 
+  // Табы
+  function tabs() {
+    $('.js-tabs').each(function () {
+      var tabs = $(this),
+          trigger = tabs.find('.js-tabs-trigger'),
+          content = tabs.find('.js-tabs-content');
+      trigger.on('click', function () {
+        var $this = $(this),
+          $thisContent = $('[data-trigger="' + $this.data('content') + '"]');
+        if (!$this.hasClass('active')) {
+          trigger.removeClass('active');
+          content.removeClass('open');
+          $this.addClass('active');
+          $thisContent.addClass('open');
+        }else {
+          return false;
+        }
+        console.log($thisContent);
+      })
+    })
+  }
+  tabs();
+
   // Аккордеон
   function accordion() {
   	if ($('.accordion').length) {
@@ -196,6 +219,23 @@ $(document).ready(function () {
   	thisModal.hide();
   };
   modal();
+
+  // Появление блоков при активном switch
+  function switchShowBlock() {
+    $('.js-switch').each(function () {
+      var $swich = $(this);
+      $swich.find('input').on('change', function () {
+        if ($(this).prop('checked')) {
+          console.log('dd');
+          $($swich.data('block')).addClass('open');
+        }
+        else {
+          $($swich.data('block')).removeClass('open');
+        }
+      })
+    })
+  }
+  switchShowBlock();
 
   // // Текст печатная машинка
   // function textPrint(block) {
