@@ -143,11 +143,160 @@ include ../html_blocks/header-enter.html
               //	/configuration
             .tabs__col
         div.tabs__content.js-tabs-content(data-trigger="tab_3")
-          .row-grid 
-            .tabs__col 
-            .tabs__col
-              .tabs__img
-                img(src="img/img-lk_2.jpg", alt="")
+          .tabs__section.tabs__section--border
+            .row-grid 
+              .tabs__col 
+                // pricing
+                .pricing
+                  .pricing__title Ваш баланс
+                  .user__btn 500 VIN
+                  .new-btn.new-btn--green Пополнить
+                  .pricing__remains 
+                    img(src="img/clock.svg", alt="")
+                    span Осталось до обнуления 19 дней
+                //	/pricing
+
+                // tariffs
+                .tariffs
+                  .tariffs__title Выберите тариф
+
+                  .tariffs__swiper
+                    .swiper-wrapper
+
+                      .swiper-slide
+                        .tariffs__item
+                          .tariffs__name БЕСПЛАТНО
+                          .tariffs__price 0 ₽
+                          .tariffs__text 
+                            p 1 VIN = 0 ₽
+                            p 100 VIN в мес.₽
+                          .new-btn.new-btn--gradient 
+                            span Выбрать тариф
+
+                      .swiper-slide
+                        .tariffs__item.tariffs__item--active
+                          .tariffs__name БАЗОВЫЙ
+                          .tariffs__price 10 000 ₽
+                          .tariffs__text 
+                            p 1 VIN = 10 ₽
+                            p 1000 VIN в мес.₽
+                          .new-btn.new-btn--green Оплатить
+
+                      .swiper-slide
+                        .tariffs__item
+                          .tariffs__name РАСШИРЕННЫЙ
+                          .tariffs__price 20 000 ₽
+                          .tariffs__text 
+                            p 1 VIN = 8 ₽
+                            p 2500 VIN в мес.₽
+                          .new-btn.new-btn--gradient 
+                            span Выбрать тариф
+                          
+                    .swiper-scrollbar
+
+                //	/tariffs
+              .tabs__col
+                .tabs__img
+                  img(src="img/img-lk_2.jpg", alt="")
+          .tabs__section  
+            .row-grid 
+              .tabs__col 
+                // history-pay
+                .history-pay
+                  .history-pay__title История платежей
+                  table.history-pay__table
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--wait Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Скачать счет
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--pay Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Форма КС-2
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--pay Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Форма КС-2
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--wait Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Скачать счет
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--pay Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Форма КС-2
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--wait Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Скачать счет
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--pay Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Форма КС-2
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--wait Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Скачать счет
+                    tr 
+                      td 13.08.2021
+                      td 5000 руб
+                      td
+                        span.history-pay__condition.history-pay__condition--pay Ожидает оплаты
+                      td
+                        a(href="#" download="").history-pay__download
+                          img(src="img/pdf_icon.svg", alt="") 
+                          span Форма КС-2
+                  
+                  .history-pay__pagination
+                    a(href="#").active 1
+                    a(href="#") 2
+                    a(href="#") 3
+                    a(href="#") 4
+                    span ...
+                    a(href="#") 9
+                  
+                //	/history-pay
+              .tabs__col 
     // /tabs
 
 include ../html_blocks/footer.html

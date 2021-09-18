@@ -173,6 +173,31 @@ body {
       background-color: lighten($black, 10%);
     }
   }
+  &--gradient {
+    background: linear-gradient(90deg, #02AAB0 0%, #00CDAC 100%), linear-gradient(269.33deg, #0FFBCF -11.34%, #36BBFB 116.76%), #10B981;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: transparent;
+      transition: 0.3s;
+      z-index: 1;
+    }
+    span {
+      position: relative;
+      z-index: 2;
+    }
+    &:hover {
+      &:before {
+        background-color: $green;
+      }
+    }
+  }
   &:focus {
     outline: none;
   }
@@ -389,5 +414,14 @@ body {
   @media (max-width: $break_xs) {
     max-width: none;
   }
+}
+.swiper-scrollbar {
+  background: transparent;
+}
+.swiper-horizontal>.swiper-scrollbar {
+  height: 10px;
+}
+.swiper-scrollbar-drag {
+  background: #CDCFD3;
 }
 /* /settings */

@@ -8,8 +8,8 @@ $(document).ready(function () {
   // Брэйкпоинты js
   var breakXl = 1400,
     breakLg = 1200,
-    breakMd = 1025,
-    breakSm = 769,
+    breakMd = 991,
+    breakSm = 767,
     breakXs = 500;
 
   // Запрет перехода по ссылкам с хэшем
@@ -147,10 +147,12 @@ $(document).ready(function () {
           content.removeClass('open');
           $this.addClass('active');
           $thisContent.addClass('open');
+          swiperTariffs.update();
+          swiperTariffs.slideTo(0);
+          swiperTariffs.slideTo(1);
         }else {
           return false;
         }
-        console.log($thisContent);
       })
     })
   }
@@ -808,6 +810,27 @@ $(document).ready(function () {
     })
   }
   copyText();
+
+  // Swiper
+  const swiperTariffs = new Swiper('.tariffs__swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 10,
+    initialSlide: 1,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        centeredSlides: false,
+      },
+    },
+  });
+  $(window).resize(function () {
+    swiperTariffs.slideTo(1);
+  })
 
   // // JQuery Slider // Ползунок
   // function JQuerySlider() {
