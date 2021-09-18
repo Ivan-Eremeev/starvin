@@ -58,6 +58,9 @@
       font-size: 14px;
       line-height: 21px;
       color: #6B7280;
+      &:hover {
+        color: #0054B9;
+      }
       &.active {
         color: #1F2937;
       }

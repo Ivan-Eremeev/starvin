@@ -40,7 +40,15 @@ $break_xs: 500px;
 // @import 'bootstrap/bootstrap'; // Подключение бутстрап
 
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("Inter", "../fonts/Inter/InterThin", 100, normal);
+@include font-face("Inter", "../fonts/Inter/InterExtraLight", 200, normal);
+@include font-face("Inter", "../fonts/Inter/InterLight", 300, normal);
+@include font-face("Inter", "../fonts/Inter/InterRegular", normal, normal);
+@include font-face("Inter", "../fonts/Inter/InterMedium", 500, normal);
+@include font-face("Inter", "../fonts/Inter/InterSemiBold", 600, normal);
+@include font-face("Inter", "../fonts/Inter/InterBold", bold, normal);
+@include font-face("Inter", "../fonts/Inter/InterExtraBold.svg", 800, normal);
+@include font-face("Inter", "../fonts/Inter/InterBlack", 900, normal);
 
 // Цвета
 $green: #10B981;

@@ -48,8 +48,9 @@ body {
   opacity: 1;
 }
 .page {
-  padding-top: 84px;
+  padding-top: 114px;
   flex-grow: 1;
+  background: #f7fdff url(../img/bg-image.svg) repeat;
   @media (max-width: 991px) {
     padding-top: 140px;
   }
@@ -138,6 +139,7 @@ body {
   height: 40px;
   padding: 0 18px;
   border-radius: 4px;
+  font-family: 'Inter';
   font-size: 15px;
   font-weight: bold;
   color: #fff;
@@ -153,24 +155,28 @@ body {
     background-color: $green;
     &:hover {
       background-color: lighten($green, 10%);
+      color: #fff;
     }
   }
   &--blue {
     background-color: $blue;
     &:hover {
       background-color: lighten($blue, 10%);
+      color: #fff;
     }
   }
   &--red {
     background-color: $red;
     &:hover {
       background-color: lighten($red, 10%);
+      color: #fff;
     }
   }
   &--black {
     background-color: $black;
     &:hover {
       background-color: lighten($black, 10%);
+      color: #fff;
     }
   }
   &--gradient {
@@ -196,6 +202,7 @@ body {
       &:before {
         background-color: $green;
       }
+      color: #fff;
     }
   }
   &:focus {
@@ -294,7 +301,7 @@ body {
       cursor: pointer;
       transition: 0.3s;
       &:hover {
-        color: #36BBFB;
+        color: #0054B9;
       }
     }
   }

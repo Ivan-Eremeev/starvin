@@ -2,6 +2,7 @@
   padding: 50px 20px 40px;
   margin-bottom: 20px;
   border: 1px solid $bdc;
+  background-color: #fff;
   &__col {
     @include col(6);
     @include col-md(12);
@@ -22,7 +23,7 @@
     font-size: 16px;
     line-height: 21px;
     font-weight: 600;
-    color: #1F2937;
+    color: #6B7280;
   }
   @media (max-width: $break_md) {
     &__col {

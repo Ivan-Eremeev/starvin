@@ -67,19 +67,19 @@
 
         $(window).on("scroll load", function() {
             var scroll = $(window).scrollTop();
-            if (scroll >= 120) {
+            if (scroll >= 100) {
                 $stickyNav.addClass("navbar-sticky-moved-up");
             } else {
                 $stickyNav.removeClass("navbar-sticky-moved-up");
             }
             // apply transition
-            if (scroll >= 250) {
+            if (scroll >= 100) {
                 $stickyNav.addClass("navbar-sticky-transitioned");
             } else {
                 $stickyNav.removeClass("navbar-sticky-transitioned");
             }
             // sticky on
-            if (scroll >= 500) {
+            if (scroll >= 100) {
                 $stickyNav.addClass("navbar-sticky-on");
             } else {
                 $stickyNav.removeClass("navbar-sticky-on");

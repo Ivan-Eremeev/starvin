@@ -1,6 +1,8 @@
 .details {
   padding: 20px;
   border: 1px solid #F3F4F6;
+  background-color: #fff;
+  margin-bottom: 113px;
   &__item {
     padding: 20px;
     border: 1px solid $bdc;
@@ -32,7 +34,6 @@
   }
   &__chunk {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     min-height: 64px;
@@ -47,7 +48,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    color: #047857;
+    color: #1DB054;
     user-select: none;
     cursor: pointer;
     img {
@@ -74,6 +75,11 @@
       font-size: 12px;
       line-height: 21px;
       color: #6B7280;
+      span {
+        display: block;
+        font-weight: bold;
+        color: #1D4ED8;
+      }
     }
   }
   &__scheme {
@@ -183,6 +189,7 @@
   }
   @media (max-width: $break_xs) {
     padding: 10px;
+    margin-bottom: 36px;
     &__item {
       padding: 30px 20px;
     }

@@ -1,3 +1,66 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Inter/InterThin.eot");
+  src: url("../fonts/Inter/InterThin.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterThin.woff") format("woff"), url("../fonts/Inter/InterThin.woff2") format("woff2"), url("../fonts/Inter/InterThin.ttf") format("truetype"), url("../fonts/Inter/InterThin.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Inter/InterExtraLight.eot");
+  src: url("../fonts/Inter/InterExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterExtraLight.woff") format("woff"), url("../fonts/Inter/InterExtraLight.woff2") format("woff2"), url("../fonts/Inter/InterExtraLight.ttf") format("truetype"), url("../fonts/Inter/InterExtraLight.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Inter/InterLight.eot");
+  src: url("../fonts/Inter/InterLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterLight.woff") format("woff"), url("../fonts/Inter/InterLight.woff2") format("woff2"), url("../fonts/Inter/InterLight.ttf") format("truetype"), url("../fonts/Inter/InterLight.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Inter/InterRegular.eot");
+  src: url("../fonts/Inter/InterRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterRegular.woff") format("woff"), url("../fonts/Inter/InterRegular.woff2") format("woff2"), url("../fonts/Inter/InterRegular.ttf") format("truetype"), url("../fonts/Inter/InterRegular.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Inter/InterMedium.eot");
+  src: url("../fonts/Inter/InterMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterMedium.woff") format("woff"), url("../fonts/Inter/InterMedium.woff2") format("woff2"), url("../fonts/Inter/InterMedium.ttf") format("truetype"), url("../fonts/Inter/InterMedium.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Inter/InterSemiBold.eot");
+  src: url("../fonts/Inter/InterSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterSemiBold.woff") format("woff"), url("../fonts/Inter/InterSemiBold.woff2") format("woff2"), url("../fonts/Inter/InterSemiBold.ttf") format("truetype"), url("../fonts/Inter/InterSemiBold.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Inter/InterBold.eot");
+  src: url("../fonts/Inter/InterBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterBold.woff") format("woff"), url("../fonts/Inter/InterBold.woff2") format("woff2"), url("../fonts/Inter/InterBold.ttf") format("truetype"), url("../fonts/Inter/InterBold.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Inter/InterExtraBold.svg.eot");
+  src: url("../fonts/Inter/InterExtraBold.svg.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterExtraBold.svg.woff") format("woff"), url("../fonts/Inter/InterExtraBold.svg.woff2") format("woff2"), url("../fonts/Inter/InterExtraBold.svg.ttf") format("truetype"), url("../fonts/Inter/InterExtraBold.svg.svg") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Inter/InterBlack.eot");
+  src: url("../fonts/Inter/InterBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter/InterBlack.woff") format("woff"), url("../fonts/Inter/InterBlack.woff2") format("woff2"), url("../fonts/Inter/InterBlack.ttf") format("truetype"), url("../fonts/Inter/InterBlack.svg") format("svg");
+}
 /* settings */
 html {
   height: 100%;
@@ -80,10 +143,11 @@ body {
 }
 
 .page {
-  padding-top: 84px;
+  padding-top: 114px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  background: #f7fdff url(../img/bg-image.svg) repeat;
 }
 @media (max-width: 991px) {
   .page {
@@ -221,6 +285,7 @@ body {
   height: 40px;
   padding: 0 18px;
   border-radius: 4px;
+  font-family: "Inter";
   font-size: 15px;
   font-weight: bold;
   color: #fff;
@@ -244,24 +309,28 @@ body {
 }
 .new-btn--green:hover {
   background-color: #14e8a2;
+  color: #fff;
 }
 .new-btn--blue {
   background-color: #3DBCE1;
 }
 .new-btn--blue:hover {
   background-color: #69cbe8;
+  color: #fff;
 }
 .new-btn--red {
   background-color: #F87171;
 }
 .new-btn--red:hover {
   background-color: #faa2a2;
+  color: #fff;
 }
 .new-btn--black {
   background-color: #374151;
 }
 .new-btn--black:hover {
   background-color: #4c596f;
+  color: #fff;
 }
 .new-btn--gradient {
   background: -o-linear-gradient(left, #02AAB0 0%, #00CDAC 100%), -o-linear-gradient(180.67deg, #0FFBCF -11.34%, #36BBFB 116.76%), #10B981;
@@ -285,6 +354,9 @@ body {
 .new-btn--gradient span {
   position: relative;
   z-index: 2;
+}
+.new-btn--gradient:hover {
+  color: #fff;
 }
 .new-btn--gradient:hover:before {
   background-color: #10B981;
@@ -396,7 +468,7 @@ body {
   transition: 0.3s;
 }
 .select__list label:hover {
-  color: #36BBFB;
+  color: #0054B9;
 }
 .select__arrow {
   position: absolute;
@@ -609,7 +681,7 @@ body {
   white-space: nowrap;
 }
 .user__name:hover, .user__name.is-active {
-  color: #36BBFB;
+  color: #0054B9;
 }
 .user__icon {
   cursor: pointer;
@@ -650,7 +722,7 @@ body {
   color: #111827;
 }
 .user__list a:hover {
-  color: #36BBFB;
+  color: #0054B9;
 }
 .user__container {
   display: -webkit-box;
@@ -677,6 +749,7 @@ body {
   padding: 50px 20px 40px;
   margin-bottom: 20px;
   border: 1px solid #EFF0F2;
+  background-color: #fff;
 }
 .vin__col {
   width: 50%;
@@ -704,7 +777,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-weight: 600;
-  color: #1F2937;
+  color: #6B7280;
 }
 @media (max-width: 991px) {
   .vin__col:nth-child(1) {
@@ -734,6 +807,7 @@ body {
 
 .filter {
   border: 1px solid #EFF0F2;
+  background-color: #fff;
   margin-bottom: 20px;
 }
 .filter__head {
@@ -775,9 +849,8 @@ body {
   padding: 15px 20px;
 }
 .filter__span {
-  padding-top: 10px;
+  padding-top: 13px;
   font-size: 14px;
-  font-weight: bold;
   color: #9CA3AF;
 }
 .filter__sticker {
@@ -786,10 +859,11 @@ body {
   margin-bottom: 5px;
   margin-left: 10px;
   border-radius: 50px;
-  background-color: #6B7880;
+  background-color: #fff;
+  border: 1px solid #D1D5DB;
   font-size: 12px;
   font-weight: normal;
-  color: #fff;
+  color: #6B7280;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -801,7 +875,8 @@ body {
   transition: 0.3s;
 }
 .filter__sticker:hover {
-  background: #374151;
+  background-color: #E5E7EB;
+  border-color: #E5E7EB;
 }
 .filter__cross {
   width: 12px;
@@ -884,6 +959,8 @@ body {
 .details {
   padding: 20px;
   border: 1px solid #F3F4F6;
+  background-color: #fff;
+  margin-bottom: 113px;
 }
 .details__item {
   padding: 20px;
@@ -934,9 +1011,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -957,7 +1031,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  color: #047857;
+  color: #1DB054;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -991,6 +1065,11 @@ body {
   font-size: 12px;
   line-height: 21px;
   color: #6B7280;
+}
+.details__img p span {
+  display: block;
+  font-weight: bold;
+  color: #1D4ED8;
 }
 .details__scheme {
   position: relative;
@@ -1121,6 +1200,7 @@ body {
 @media (max-width: 500px) {
   .details {
     padding: 10px;
+    margin-bottom: 36px;
   }
   .details__item {
     padding: 30px 20px;
@@ -1337,6 +1417,8 @@ body {
 
 .search {
   border: 1px solid #EFF0F2;
+  background-color: #fff;
+  margin-bottom: 76px;
 }
 .search__title {
   padding: 40px 40px 27px;
@@ -1436,6 +1518,9 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .search {
+    margin-bottom: 90px;
+  }
   .search__title {
     padding: 30px 20px;
     font-size: 24px;
@@ -1838,6 +1923,9 @@ body {
   line-height: 21px;
   color: #6B7280;
 }
+.history-pay__pagination a:hover {
+  color: #0054B9;
+}
 .history-pay__pagination a.active {
   color: #1F2937;
 }
@@ -2027,6 +2115,8 @@ body {
 
 .tabs {
   border: 1px solid #EFF0F2;
+  background-color: #fff;
+  margin-bottom: 80px;
 }
 .tabs__head {
   display: -webkit-box;
@@ -2074,7 +2164,10 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
-.tabs__trigger:hover, .tabs__trigger.active {
+.tabs__trigger:hover {
+  color: #0054B9;
+}
+.tabs__trigger.active {
   color: #111827;
 }
 .tabs__contents {
@@ -2135,6 +2228,9 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .tabs {
+    margin-bottom: 90px;
+  }
   .tabs__head {
     padding: 28px 20px 0;
   }

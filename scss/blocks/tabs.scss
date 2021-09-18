@@ -1,5 +1,7 @@
 .tabs {
   border: 1px solid $bdc;
+  background-color: #fff;
+  margin-bottom: 80px;
   &__head {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +33,10 @@
     font-size: 12px;
     font-weight: 600;
     white-space: nowrap;
-    &:hover, &.active {
+    &:hover {
+      color: #0054B9;
+    }
+    &.active {
       color: #111827;
     }
   }
@@ -92,6 +97,7 @@
     }
   }
   @media (max-width: $break_xs) {
+    margin-bottom: 90px;
     &__head {
       padding: 28px 20px 0;
     }

@@ -1,5 +1,7 @@
 .search {
   border: 1px solid $bdc;
+  background-color: #fff;
+  margin-bottom: 76px;
   &__title {
     padding: 40px 40px 27px;
     margin-bottom: 0;
@@ -88,6 +90,7 @@
     }
   }
   @media (max-width: $break_xs) {
+    margin-bottom: 90px;
     &__title {
       padding: 30px 20px;
       font-size: 24px;
