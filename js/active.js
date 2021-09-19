@@ -67,24 +67,23 @@
 
         $(window).on("scroll load", function() {
             var scroll = $(window).scrollTop();
-            if (scroll >= 100) {
+            if (scroll >= 180) {
                 $stickyNav.addClass("navbar-sticky-moved-up");
             } else {
                 $stickyNav.removeClass("navbar-sticky-moved-up");
             }
             // apply transition
-            if (scroll >= 100) {
+            if (scroll >= 200) {
                 $stickyNav.addClass("navbar-sticky-transitioned");
             } else {
                 $stickyNav.removeClass("navbar-sticky-transitioned");
             }
             // sticky on
-            if (scroll >= 100) {
+            if (scroll >= 220) {
                 $stickyNav.addClass("navbar-sticky-on");
             } else {
                 $stickyNav.removeClass("navbar-sticky-on");
             }
-
         });
     }
     navMenu();

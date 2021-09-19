@@ -40,6 +40,24 @@ body {
     padding-top: 56.25%;
   }
 }
+.videoframe {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
 *:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #fff !important;
 }
@@ -354,19 +372,25 @@ body {
 }
 .success {
   width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  background-color: $green;
+  max-width: 200px;
+  padding: 10px;
+  background-color: rgba(16,185,129,.7);
   color: #fff;
   position: fixed;
-  top: 20px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%,-100px);
+  transform: translate(-50%, 10px);
   z-index: 1000;
-  transition: 0.5s;
+  transition: 0.2s;
   text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  font-weight: bold;
   &.open {
     transform: translate(-50%,0);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
   }
 }
 .switch {

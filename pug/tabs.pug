@@ -150,14 +150,14 @@ include ../html_blocks/header-enter.html
                 .pricing
                   .pricing__title Ваш баланс
                   .user__btn 500 VIN
-                  .new-btn.new-btn--green Пополнить
+                  .new-btn.new-btn--green.js-drop-btn-fade(data-drop="tariffs") Пополнить
                   .pricing__remains 
                     img(src="img/clock.svg", alt="")
                     span Осталось до обнуления 19 дней
                 //	/pricing
 
                 // tariffs
-                .tariffs
+                .tariffs#tariffs
                   .tariffs__title Выберите тариф
 
                   .tariffs__swiper
@@ -165,11 +165,11 @@ include ../html_blocks/header-enter.html
 
                       .swiper-slide
                         .tariffs__item
-                          .tariffs__name БЕСПЛАТНО
-                          .tariffs__price 0 ₽
+                          .tariffs__name СТАРТОВЫЙ
+                          .tariffs__price 5000 ₽
                           .tariffs__text 
-                            p 1 VIN = 0 ₽
-                            p 100 VIN в мес.₽
+                            p 1 VIN = 10 ₽
+                            p 500 VIN в мес.
                           a(href="#").new-btn.new-btn--gradient 
                             span Выбрать тариф
 
@@ -179,7 +179,7 @@ include ../html_blocks/header-enter.html
                           .tariffs__price 10 000 ₽
                           .tariffs__text 
                             p 1 VIN = 10 ₽
-                            p 1000 VIN в мес.₽
+                            p 1000 VIN в мес.
                           a(href="#").new-btn.new-btn--green Оплатить
 
                       .swiper-slide
@@ -188,7 +188,7 @@ include ../html_blocks/header-enter.html
                           .tariffs__price 20 000 ₽
                           .tariffs__text 
                             p 1 VIN = 8 ₽
-                            p 2500 VIN в мес.₽
+                            p 2500 VIN в мес.
                           a(href="#").new-btn.new-btn--gradient 
                             span Выбрать тариф
                           

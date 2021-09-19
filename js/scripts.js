@@ -67,19 +67,19 @@ $(document).ready(function () {
   // };
   // screenHeight($('.js-fullHeight'));
 
-  // // Scroll to ID // Плавный скролл к элементу при нажатии на ссылку.
-  // function menuScroll(menuItem) {
-  // 	menuItem.find('a[href^="#"]').click( function(){
-  // 		var scroll_el = $(this).attr('href'),
-  // 				time = 500;
-  // 		if ($(scroll_el).length != 0) {
-  // 		$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, time);
-  // 			$(this).addClass('active');
-  // 		}
-  // 		return false;
-  // 	});
-  // };
-  // menuScroll();
+  // Scroll to ID // Плавный скролл к элементу при нажатии на ссылку.
+  function menuScroll(menuItem) {
+  	menuItem.find('a[href^="#"]').click( function(){
+  		var scroll_el = $(this).attr('href'),
+  				time = 500;
+  		if ($(scroll_el).length != 0) {
+  		$('html, body').animate({ scrollTop: $(scroll_el).offset().top - 70}, time);
+  			$(this).addClass('active');
+  		}
+  		return false;
+  	});
+  };
+  menuScroll($('.js-scroll'));
 
   // // Stiky menu // Липкое меню.
   // function stikyMenu(header) {
@@ -225,14 +225,15 @@ $(document).ready(function () {
   // Появление блоков при активном switch
   function switchShowBlock() {
     $('.js-switch').each(function () {
-      var $swich = $(this);
+      var $swich = $(this),
+          time = 200;
       $swich.find('input').on('change', function () {
         if ($(this).prop('checked')) {
           console.log('dd');
-          $($swich.data('block')).addClass('open');
+          $($swich.data('block')).fadeIn(time);
         }
         else {
-          $($swich.data('block')).removeClass('open');
+          $($swich.data('block')).fadeOut(time);
         }
       })
     })
@@ -714,7 +715,38 @@ $(document).ready(function () {
   	})
   }
   dropBlock($('.js-drop-btn'));
-  // dropBlock($('.js-drop-btn-comment'), true);
+
+  // Выпадайки при клике по кнопке через JQuery
+  // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
+  // Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
+  function dropBlockJQuery(btn, windowClick) {
+    var $this = undefined,
+      drop = undefined,
+      close = $('.js-drop-close'),
+      time = 100;
+    btn.on('click', function () {
+      $this = $(this);
+      drop = $('#' + $this.data('drop'));
+      $this.toggleClass('is-active');
+      drop.fadeToggle(time);
+      if (!windowClick) {
+        $(document).mouseup(function (e) {
+          if (!$this.is(e.target)
+            && $this.has(e.target).length === 0
+            && !drop.is(e.target)
+            && drop.has(e.target).length === 0) {
+            $this.toggleClass('is-active');
+            drop.fadeOut(time);
+          }
+        });
+      }
+    })
+    close.on('click', function () {
+      $('[data-drop="' + $(this).data('drop') + '"]').removeClass('is-active');
+      $('#' + $(this).data('drop')).fadeOut(time);
+    })
+  }
+  dropBlockJQuery($('.js-drop-btn-fade'));
 
   // Выпадайка textarea
   function dropTextarea(btn) {
@@ -806,7 +838,7 @@ $(document).ready(function () {
       successBlock.addClass('open');
       setTimeout(function () {
         successBlock.removeClass('open');
-      }, 1500)
+      }, 1000)
     })
   }
   copyText();
@@ -831,6 +863,19 @@ $(document).ready(function () {
   $(window).resize(function () {
     swiperTariffs.slideTo(1);
   })
+
+  // Изменение при нажатии кнопки в таблице попапа
+  function schemeTable() {
+    $('.scheme__table').each(function () {
+      var table = $(this),
+          btn = table.find('button');
+      btn.on('click', function () {
+        $(this).attr('disabled','').text('Добавлено');
+        $(this).closest('tr').addClass('active');
+      })
+    })
+  }
+  schemeTable();
 
   // // JQuery Slider // Ползунок
   // function JQuerySlider() {
