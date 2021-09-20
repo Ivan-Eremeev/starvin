@@ -60,6 +60,10 @@ $black: #374151;
 
 // Подключение файлов
 @import 'blocks/settings';
+@import 'blocks/modal';
+@import 'blocks/tooltipster-noir';
+@import 'blocks/accordion';
+@import 'blocks/tabs';
 @import 'blocks/user';
 @import 'blocks/vin';
 @import 'blocks/filter';
@@ -73,9 +77,6 @@ $black: #374151;
 @import 'blocks/pricing';
 @import 'blocks/tariffs';
 @import 'blocks/history-pay';
-// @import 'hamburgers/hamburgers';
-// @import 'blocks/menu';
-@import 'blocks/accordion';
-@import 'blocks/modal';
-@import 'blocks/tooltipster-noir';
-@import 'blocks/tabs';
+@import 'blocks/enter';
+@import 'blocks/policy';
+@import 'blocks/page-404';

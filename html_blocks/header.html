@@ -61,7 +61,10 @@
               </li>
 
               <li class="nav-item">
-                <a href="./Login/index.html" class="nav-link">Войти</a>
+                <a href="#" class="nav-link modal-trigger" data-modal="#modalEnter">Войти</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link modal-trigger" data-modal="#modalRegistration">Войти</a>
               </li>
             </ul>
           </nav>
@@ -71,5 +74,74 @@
   </div>
   </div>
   </div>
+
+    <!-- modal enter -->
+    <div class="enter modal" id="modalEnter">
+      <div class="enter__body modal_body">
+        <div class="enter__content modal_content">
+          <div class="enter__container">
+            <div class="enter__title">Регистрация на сайте</div>
+            <form action="#" class="enter__form">
+              <div class="input">
+                <input class="mask-tel" type="tel">
+                <div class="input__label input__label--dark">Ваш телефон</div>
+              </div>
+              <button id="regBtn" class="new-btn">
+                <span>Отправить код</span>
+              </button>
+              <div id="regBlock">
+                <div class="enter__repeat"> Повторить через
+                  <span class="enter__counter">00.00</span>
+                </div>
+                <div class="input">
+                  <input type="text">
+                  <div class="input__label input__label--dark">Введите код из СМС</div>
+                </div>
+                <button class="new-btn">
+                  <span>Регистрация</span>
+                </button>
+              </div>
+            </form>
+            <div class="enter__footer">
+              Уже зарегистрированы?
+              <a href="#">Войти</a>
+            </div>
+            <div class="modal_close js-modal_close"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal enter -->
+
+    <!-- modal registration -->
+    <div class="enter modal" id="modalRegistration">
+      <div class="enter__body modal_body">
+        <div class="enter__content modal_content">
+          <div class="enter__container">
+            <div class="enter__title">Вход на сайт</div>
+            <form action="#" class="enter__form">
+              <div class="input">
+                <input class="mask-tel" type="tel">
+                <div class="input__label input__label--dark">Ваш телефон</div>
+              </div>
+              <div class="input">
+                <input type="password">
+                <div class="input__label input__label--dark">Пароль</div>
+              </div>
+              <button class="new-btn">
+                <span>Войти</span>
+              </button>
+            </form>
+            <div class="enter__footer">
+              Еще не зарегистрированы? 
+              <a href="#">Регистрация</a>
+            </div>
+            <div class="modal_close js-modal_close"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal registration -->
+
   </header>
   <!-- ***** Header End ***** -->

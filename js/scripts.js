@@ -895,6 +895,18 @@ $(document).ready(function () {
   }
   selectTariff();
 
+  // // Манипуляции с отправкой кода при регистрации
+  // function codeReg() {
+  //   var btn = $('#regBtn'),
+  //       block = $('#regBlock'),
+  //       time = 200;
+  //   btn.on('click', function () {
+  //     btn.fadeOut(time);
+  //     block.fadeIn(time);
+  //   })
+  // }
+  // codeReg();
+
   // // JQuery Slider // Ползунок
   // function JQuerySlider() {
   // 	if ($('.jquery-slider').length) {
