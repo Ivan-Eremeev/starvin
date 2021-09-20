@@ -746,7 +746,7 @@ $(document).ready(function () {
       $('#' + $(this).data('drop')).fadeOut(time);
     })
   }
-  dropBlockJQuery($('.js-drop-btn-fade'));
+  dropBlockJQuery($('.js-drop-btn-fade'), true);
 
   // Выпадайка textarea
   function dropTextarea(btn) {
@@ -876,6 +876,24 @@ $(document).ready(function () {
     })
   }
   schemeTable();
+
+  // Выбор тарифа
+  function selectTariff() {
+    var tariff = $('.tariffs__item'),
+        btn = tariff.find('.new-btn');
+    btn.on('click', function (e) {
+      e.preventDefault();
+      if (!$(this).hasClass('new-btn--green')) {
+        btn.addClass('new-btn--gradient').removeClass('new-btn--green').find('span').text('Выбрать тариф');
+        $(this).removeClass('new-btn--gradient').addClass('new-btn--green').find('span').text('Оплатить');
+        tariff.removeClass('tariffs__item--active');
+        $(this).closest('.tariffs__item').addClass('tariffs__item--active');
+      }else {
+        return false;
+      }
+    })
+  }
+  selectTariff();
 
   // // JQuery Slider // Ползунок
   // function JQuerySlider() {
