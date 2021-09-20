@@ -2365,7 +2365,7 @@ body {
   max-width: 650px;
 }
 .enter__content {
-  height: 620px;
+  height: 580px;
 }
 .enter__container {
   display: -webkit-box;
@@ -2384,7 +2384,7 @@ body {
   margin-right: auto;
 }
 .enter__title {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 34px;
   text-align: center;
@@ -2453,12 +2453,15 @@ body {
 }
 @media (max-width: 500px) {
   .enter__content {
-    height: 530px;
+    height: 470px;
     padding: 20px 20px;
   }
   .enter__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 22px;
+  }
+  .enter .input {
+    margin-top: 40px;
   }
 }
 
