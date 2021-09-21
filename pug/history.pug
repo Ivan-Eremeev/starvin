@@ -453,8 +453,8 @@ include ../html_blocks/header-enter.html
               .scheme__mouse 
                 img(src="img/mouse.svg", alt="")
             .scheme__col 
-              .scheme__scroll-hide
-                .scheme__scroll
+              .scheme__scroll.scrollbar-inner
+                .scheme__scroll-inner
                   table.scheme__table
                     tr
                       th №
@@ -470,7 +470,7 @@ include ../html_blocks/header-enter.html
                         button(type="submit") Добавить
                       td 
                         span.scheme__quest.tooltipster(title="Описание")
-                    tr 
+                    tr
                       td 02
                       td 11287786880
                       td Натяжитель ремня 
@@ -478,11 +478,12 @@ include ../html_blocks/header-enter.html
                         button(type="submit") Добавить
                       td 
                         span.scheme__quest.tooltipster(title="Описание")
-                    tr.active
+                    tr
                       td 03
                       td 11517789351
                       td Винт Торх с буртиком 
                       td
+                        button(type="submit") Добавить
                       td 
                         span.scheme__quest.tooltipster(title="Описание")
                     tr 
