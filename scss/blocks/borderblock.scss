@@ -1,0 +1,32 @@
+.borderblock {
+  background: #FFFFFF;
+  border: 1px solid $bdc;
+  margin-bottom: 30px;
+  &__head {
+    padding: 40px 40px 30px;
+    border-bottom: 1px solid $bdc;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #111827;
+    margin-bottom: 0;
+  }
+  &__body {
+    padding: 50px 40px;
+  }
+  @media (max-width: $break_xs) {
+    margin-left: $offset-sm * -1;
+    margin-right: $offset-sm * -1;
+    margin-bottom: 20px;
+    &__head {
+      padding: 30px 20px 20px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__body {
+      padding: 30px 20px;
+    }
+  }
+}

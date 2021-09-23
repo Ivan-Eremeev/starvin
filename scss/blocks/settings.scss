@@ -399,6 +399,7 @@ body {
     &:checked {
       + label {
         background-color: $green;
+        background-color: $green;
         &:after {
           content: '';
           display: block;
@@ -413,7 +414,7 @@ body {
     height: 23px;
     border-radius: 50px;
     margin-bottom: 0;
-    background-color: $bdc;
+    background-color: $bdcD;
     border: 1px solid $bdcD;
     position: relative;
     user-select: none;
@@ -454,5 +455,30 @@ body {
 }
 .swiper-scrollbar-drag {
   background: #CDCFD3;
+}
+.btn-dashed {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px dashed #374151;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  outline: none;
+  svg {
+    margin-right: 12px;
+    fill: #374151;
+    transition: 0.3s;
+  }
+  &:hover {
+    border-color: $green;
+    color: $green;
+    svg {
+      fill: $green;
+    }
+  }
 }
 /* /settings */

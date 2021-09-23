@@ -1,0 +1,174 @@
+include ../html_blocks/header-enter.html
+
+.page
+
+  .container
+
+    // breadcrumbs
+    .breadcrumbs
+      ul.breadcrumbs__list 
+        li 
+          a(href="#") Личный кабинет
+        li 
+          span Мои склады
+    //	/breadcrumbs
+
+    // borderblock
+    .borderblock
+      .borderblock__head 
+        h1.borderblock__title Мои склады
+      .borderblock__body 
+        // stockroom
+        .stockroom
+          .stockroom__container
+            .stockroom__scroll.scrollbar-inner
+              .stockroom__inner
+                table.stockroom__table
+                  tr 
+                    th 
+                    th 
+                    th Название склада
+                    th Кол-во стеллажей
+                    th На складе, шт.
+                    th Продано
+                    th Всего
+                    th 
+                    th 
+                    th 
+                    th 
+                  tr 
+                    td 
+                      img(src="img/qr.svg", alt="")
+                    td 
+                      img(src="img/stockroom_1.jpg", alt="")
+                    td 
+                      a(href="#") СК1Вавилова
+                    td 57
+                    td 5 554
+                    td 135 158 ₽
+                    td 1 284 308 ₽
+                    td 
+                      span.switch 
+                        input#stockroom_1(type="checkbox" checked)
+                        label(for="stockroom_1") 
+                    td 
+                      span.stockroom__edit
+                    td 
+                      span.stockroom__delete
+                    td 
+                      span.stockroom__move
+                  tr 
+                    td 
+                      img(src="img/qr.svg", alt="")
+                    td 
+                      img(src="img/stockroom_2.jpg", alt="")
+                    td 
+                      a(href="#") СК1Вавилова
+                    td 32
+                    td 711
+                    td 27 530 ₽
+                    td 956 305 ₽
+                    td 
+                      span.switch 
+                        input#stockroom_2(type="checkbox" checked)
+                        label(for="stockroom_2") 
+                    td 
+                      span.stockroom__edit
+                    td 
+                      span.stockroom__delete
+                    td 
+                      span.stockroom__move
+                  tr 
+                    td 
+                      img(src="img/qr.svg", alt="")
+                    td 
+                      img(src="img/stockroom_1.jpg", alt="")
+                    td 
+                      a(href="#") СК1Вавилова
+                    td 46
+                    td 822
+                    td 18 128 ₽
+                    td 988 250 ₽
+                    td 
+                      span.switch 
+                        input#stockroom_3(type="checkbox" checked)
+                        label(for="stockroom_3") 
+                    td 
+                      span.stockroom__edit
+                    td 
+                      span.stockroom__delete
+                    td 
+                      span.stockroom__move
+                  tr 
+                    td 
+                      img(src="img/qr.svg", alt="")
+                    td 
+                      img(src="img/stockroom_1.jpg", alt="")
+                    td 
+                      a(href="#") СК1Вавилова
+                    td 27
+                    td 9 788
+                    td 94 252 ₽
+                    td 720 215 ₽
+                    td 
+                      span.switch 
+                        input#stockroom_4(type="checkbox" checked)
+                        label(for="stockroom_4") 
+                    td 
+                      span.stockroom__edit
+                    td 
+                      span.stockroom__delete
+                    td 
+                      span.stockroom__move
+                  tr 
+                    td 
+                      img(src="img/qr.svg", alt="")
+                    td 
+                      img(src="img/stockroom_1.jpg", alt="")
+                    td 
+                      a(href="#") СК1Вавилова
+                    td 46
+                    td 902
+                    td 102 208 ₽
+                    td 634 203 ₽
+                    td 
+                      span.switch 
+                        input#stockroom_5(type="checkbox" checked)
+                        label(for="stockroom_5") 
+                    td 
+                      span.stockroom__edit
+                    td 
+                      span.stockroom__delete
+                    td 
+                      span.stockroom__move
+                  tr 
+                    td 
+                      img(src="img/qr.svg", alt="")
+                    td 
+                      img(src="img/nofoto.jpg", alt="")
+                    td 
+                      a(href="#") СК1Вавилова
+                    td 27
+                    td 175
+                    td 19 550 ₽
+                    td 955 352 ₽
+                    td 
+                      span.switch 
+                        input#stockroom_6(type="checkbox" checked)
+                        label(for="stockroom_6") 
+                    td 
+                      span.stockroom__edit
+                    td 
+                      span.stockroom__delete
+                    td 
+                      span.stockroom__move
+            a(href="#").stockroom__btn 
+              <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 0C4.71023 0 0 4.71032 0 10.5C0 16.2897 4.71023 21 10.5 21C16.2898 21 21 16.2897 21 10.5C21 4.71032 16.2898 0 10.5 0ZM10.5 18.9678C5.8309 18.9678 2.03224 15.1691 2.03224 10.5C2.03224 5.83086 5.8309 2.03224 10.5 2.03224C15.1691 2.03224 18.9678 5.8309 18.9678 10.5C18.9678 15.1691 15.1691 18.9678 10.5 18.9678Z"/>
+                <path d="M11.5164 9.48412V5.7583H9.48412V9.48412H5.7583V11.5164H9.48412V15.2422H11.5164V11.5164H15.2422V9.48412H11.5164Z"/>
+              </svg>
+              span Добавить склад
+            //	/stockroom
+    //	/borderblock
+
+include ../html_blocks/footer.html
