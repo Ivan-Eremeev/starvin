@@ -831,7 +831,7 @@ $(document).ready(function () {
   // Скопировать текст в буфер при клике
   function copyText() {
     var block = $('.copy-text'),
-        successBlock = $('<div class="success">Номер скопирован</div>');
+        successBlock = $('<div class="success">Скопировано</div>');
     $('body').prepend(successBlock);
     block.on('click', function () {
       navigator.clipboard.writeText($(this).text());
@@ -894,6 +894,15 @@ $(document).ready(function () {
     })
   }
   selectTariff();
+
+  // Добавить копию блока при нажатии на кнопку
+  function addBlock() {
+    $('.js-addbtn').on('click', function () {
+      var block = $(this).closest('.js-addblock');
+      block.clone(true).insertAfter(block);
+    })
+  }
+  addBlock();
 
   // // Манипуляции с отправкой кода при регистрации
   // function codeReg() {

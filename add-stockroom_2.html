@@ -121,61 +121,55 @@
 			<ul class="breadcrumbs__list"> 
 				<li> <a href="#">Личный кабинет</a></li>
 				<li> <a href="#">Мои склады</a></li>
-				<li> <span>Добавить склад</span></li>
+				<li> <span>Добавить стеллаж</span></li>
 			</ul>
 		</div>
 		<!--	/breadcrumbs-->
 		<!-- borderblock-->
 		<div class="borderblock">
 			<div class="borderblock__head"> 
-				<h1 class="borderblock__title">Добавить склад</h1>
+				<h1 class="borderblock__title">Добавить стеллаж</h1>
 			</div>
 			<div class="borderblock__body"> 
 				<!-- addstockroom-->
 				<div class="addstockroom">
 					<div class="row-grid"> 
 						<div class="addstockroom__col">
-							<form class="addstockroom__form" action="#">
-								<div class="input"> 
-									<input type="text"/>
-									<div class="input__label">Название склада</div>
+							<form class="addstockroom__form addstockroom__form--2 js-addblock" action="#">
+								<div class="addstockroom__row-1"> 
+									<div class="addstockroom__span">Предварительное название: </div>
+									<div class="addstockroom__name addstockroom__name--big copy-text">СК1А056<img src="img/copy.svg" alt=""/></div>
 								</div>
 								<div class="input"> 
 									<input type="text"/>
-									<div class="input__label">Адрес склада</div>
+									<div class="input__label">Количество ячеек в стеллаже</div>
 								</div>
-								<div class="addstockroom__addphoto">
-									<div class="addstockroom__photo">
-										<div class="addstockroom__subtitle">Фото склада</div>
-										<div class="addstockroom__images">
-											<div class="addstockroom__img"><img src="img/stockroom_3.jpg" alt=""/>
-												<div class="addstockroom__delete"><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.81958 3.95312V11.9999H10.1802V3.95312H1.81958ZM4.66606 10.2037H3.96294V5.67625H4.66606V10.2037ZM6.35146 10.2037H5.64833V5.67625H6.35146V10.2037ZM8.03685 10.2037H7.33372V5.67625H8.03685V10.2037Z"/>
-<path d="M7.52079 1.31742V0H4.47923V1.31742H1.06641V3.25008H10.9336V1.31742H7.52079ZM6.81766 1.31742H5.18236V0.703125H6.81766V1.31742Z"/>
-</svg><span>Удалить</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="addstockroom__add"> 
-										<input id="addPhoto" type="file"/>
-										<label class="btn-dashed" for="addPhoto"><svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+								<div class="input"> 
+									<input type="text"/>
+									<div class="input__label">Буквенное обозначение</div>
+								</div>
+								<div class="addstockroom__row-2">
+									<div class="addstockroom__span">Нахождение товара будет выглядеть как:</div>
+									<div class="addstockroom__name copy-text">СК1Вавилова056А6784675<img src="img/copy.svg" alt=""/></div>
+								</div>
+								<div class="addstockroom__add"> 
+									<div class="btn-dashed js-addbtn"><svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.5 0C4.71023 0 0 4.71032 0 10.5C0 16.2897 4.71023 21 10.5 21C16.2898 21 21 16.2897 21 10.5C21 4.71032 16.2898 0 10.5 0ZM10.5 18.9678C5.8309 18.9678 2.03224 15.1691 2.03224 10.5C2.03224 5.83086 5.8309 2.03224 10.5 2.03224C15.1691 2.03224 18.9678 5.8309 18.9678 10.5C18.9678 15.1691 15.1691 18.9678 10.5 18.9678Z"/>
 <path d="M11.5164 9.48412V5.7583H9.48412V9.48412H5.7583V11.5164H9.48412V15.2422H11.5164V11.5164H15.2422V9.48412H11.5164Z"/>
-</svg><span>Добавить фото</span>
-										</label>
+</svg><span>Добавить еще</span>
 									</div>
-									<div class="addstockroom__text">.jpeg, .png, максимум 5 мБ</div>
 								</div>
 							</form>
 						</div>
-						<div class="addstockroom__col"><img src="img/stockroom_icon.jpg" alt=""/></div>
+						<div class="addstockroom__col"><img src="img/stockroom_icon_2.jpg" alt=""/></div>
 						<div class="addstockroom__col">
 							<div class="addstockroom__printer"><img src="img/printer.svg" alt=""/></div>
 							<div class="addstockroom__qr"><img src="img/qr.svg" alt=""/></div>
 						</div>
 					</div>
-					<div class="addstockroom__nav"> <a class="addstockroom__navbtn addstockroom__navbtn--next" href="add-stockroom_2.html"> <span>Добавить стеллаж</span><svg width="22" height="12" viewBox="0 0 22 12"xmlns="http://www.w3.org/2000/svg">
+					<div class="addstockroom__nav"> <a class="addstockroom__navbtn addstockroom__navbtn--prev" href="add-stockroom.html"><svg width="22" height="12" viewBox="0 0 22 12"xmlns="http://www.w3.org/2000/svg">
+<path d="M21.725 5.33639L21.7242 5.3355L16.8256 0.460497C16.4586 0.0952938 15.865 0.0966529 15.4997 0.463684C15.1345 0.830669 15.1359 1.42425 15.5028 1.7895L18.7918 5.0625H1C0.482219 5.0625 0.0625 5.48222 0.0625 6C0.0625 6.51778 0.482219 6.9375 1 6.9375H18.7917L15.5029 10.2105C15.1359 10.5757 15.1345 11.1693 15.4998 11.5363C15.865 11.9034 16.4587 11.9047 16.8256 11.5395L21.7242 6.6645L21.7251 6.66361C22.0923 6.29714 22.0911 5.70164 21.725 5.33639Z"/>
+</svg><span>Назад к складу</span></a><a class="addstockroom__navbtn addstockroom__navbtn--next" href="add-stockroom_3.html"> <span>Добавить ячейки</span><svg width="22" height="12" viewBox="0 0 22 12"xmlns="http://www.w3.org/2000/svg">
 <path d="M21.725 5.33639L21.7242 5.3355L16.8256 0.460497C16.4586 0.0952938 15.865 0.0966529 15.4997 0.463684C15.1345 0.830669 15.1359 1.42425 15.5028 1.7895L18.7918 5.0625H1C0.482219 5.0625 0.0625 5.48222 0.0625 6C0.0625 6.51778 0.482219 6.9375 1 6.9375H18.7917L15.5029 10.2105C15.1359 10.5757 15.1345 11.1693 15.4998 11.5363C15.865 11.9034 16.4587 11.9047 16.8256 11.5395L21.7242 6.6645L21.7251 6.66361C22.0923 6.29714 22.0911 5.70164 21.725 5.33639Z"/>
 </svg></a></div>
 				</div>

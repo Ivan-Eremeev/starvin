@@ -111,10 +111,12 @@ body {
   }
   &__label {
     font-size: 14px;
+    font-weight: 600;
     color: #9CA3AF;
     position: absolute;
     top: -25px;
     left: 0;
+    white-space: nowrap;
     &--dark {
       color: #4B5563;
       font-weight: 600;
@@ -333,10 +335,12 @@ body {
   }
   &__label {
     font-size: 14px;
+    font-weight: 600;
     color: #9CA3AF;
     position: absolute;
     top: -25px;
     left: 0;
+    white-space: nowrap;
     &--dark {
       color: #4B5563;
       font-weight: 600;
