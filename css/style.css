@@ -2810,7 +2810,6 @@ body {
 }
 .addstockroom__form {
   margin-top: -60px;
-  margin-bottom: 70px;
 }
 .addstockroom__form--2 .input {
   max-width: 220px;
@@ -2904,6 +2903,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: -20px;
+  margin-top: 70px;
 }
 .addstockroom__navbtn {
   display: -webkit-box;

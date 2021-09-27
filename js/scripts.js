@@ -782,18 +782,47 @@ $(document).ready(function () {
     $('.scrollbar-inner').scrollbar();
   }
 
+  // // Селекты
+  // function select() {
+  //   $('.select').each(function () {
+  //     var $select = $(this),
+  //         trigger = $select.find('.select__trigger'),
+  //         drop = $select.find('.select__drop'),
+  //         input = drop.find('input')
+  //         time = 100;
+  //     trigger.on('click', function () {
+  //       trigger.toggleClass('active');
+  //       drop.fadeToggle(time);
+  //     })
+  //     $(document).mouseup(function (e) {
+  //       if (!trigger.is(e.target)
+  //         && trigger.has(e.target).length === 0
+  //         && !drop.is(e.target)
+  //         && drop.has(e.target).length === 0) {
+  //         trigger.removeClass('active');
+  //         drop.fadeOut(time);
+  //       }
+  //     });
+  //     input.on('change', function () {
+  //       if ($(this).is(':checked')) {
+  //         trigger.find('span').text($(this).siblings('label').text());
+  //       }
+  //       trigger.removeClass('active');
+  //       drop.fadeOut(time);
+  //     })
+  //   })
+  // }
+  // select();
+
   // Селекты
   function select() {
-    $('.select').each(function () {
-      var $select = $(this),
-          trigger = $select.find('.select__trigger'),
-          drop = $select.find('.select__drop'),
-          input = drop.find('input')
-          time = 100;
-      trigger.on('click', function () {
-        trigger.toggleClass('active');
-        drop.fadeToggle(time);
-      })
+    var time = 100,
+        trigger = false;
+    $('body').on('click', '.select__trigger', function () {
+      var drop = $(this).siblings('.select__drop');
+      trigger = $(this);
+      trigger.toggleClass('active');
+      drop.fadeToggle(time);
       $(document).mouseup(function (e) {
         if (!trigger.is(e.target)
           && trigger.has(e.target).length === 0
@@ -803,13 +832,14 @@ $(document).ready(function () {
           drop.fadeOut(time);
         }
       });
-      input.on('change', function () {
+      $('body').on('change', '.select__drop input', function () {
+        console.log(trigger);
         if ($(this).is(':checked')) {
           trigger.find('span').text($(this).siblings('label').text());
         }
         trigger.removeClass('active');
         drop.fadeOut(time);
-      })
+      });
     })
   }
   select();
@@ -830,10 +860,9 @@ $(document).ready(function () {
 
   // Скопировать текст в буфер при клике
   function copyText() {
-    var block = $('.copy-text'),
-        successBlock = $('<div class="success">Скопировано</div>');
+    var successBlock = $('<div class="success">Скопировано</div>');
     $('body').prepend(successBlock);
-    block.on('click', function () {
+    $('body').on('click', '.copy-text', function () {
       navigator.clipboard.writeText($(this).text());
       successBlock.addClass('open');
       setTimeout(function () {
@@ -897,9 +926,26 @@ $(document).ready(function () {
 
   // Добавить копию блока при нажатии на кнопку
   function addBlock() {
-    $('.js-addbtn').on('click', function () {
-      var block = $(this).closest('.js-addblock');
-      block.clone(true).insertAfter(block);
+    $('body').on('click', '.js-addbtn', function () {
+      var block = $(this).parent().prev('.js-addblock'),
+          clone = block.clone();
+      clone.find('.select__drop').attr('style', 'display: none;');
+      clone.find('.select__trigger span').text('');
+      clone.find('input[type=text]').val('');
+      clone.css({
+        'display': 'none',
+        'margin-top' : '0'
+      });
+      clone.insertAfter(block).fadeIn(200);
+      setTimeout(() => {
+        console.log(clone.find('.scroll-content'));
+        $('.scrollbar-inner').scrollbar('destroy');
+        clone.find('.select').each(function () {
+          $(this).find('.select__drop').append($(this).find('.scroll-content'));
+        })
+        $('.scroll-wrapper').remove();
+        $('.scrollbar-inner').scrollbar();
+      }, 300);
     })
   }
   addBlock();
