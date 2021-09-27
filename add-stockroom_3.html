@@ -141,110 +141,112 @@
 									<div class="addstockroom__name addstockroom__name--big copy-text">СК1056А200-1<img src="img/copy.svg" alt=""/></div>
 								</div>
 								<div class="addstockroom__switch"> <span>Есть ли у вас в одной ячейке еще контейнеры?</span>
-									<div class="switch"> 
-										<input id="switch_1" type="checkbox" checked="checked"/>
-										<label for="switch_1"> </label>
+									<div class="switch js-switch" data-block="#switchBlock">
+										<input id="switch" type="checkbox"/>
+										<label for="switch"> </label>
 									</div>
 								</div>
-								<div class="select select--1">
-									<div class="select__trigger"> <span></span>
-										<div class="select__label">Выберите стеллаж</div>
-										<div class="select__arrow">
-											 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+								<div class="addstockroom__swicth-block" id="switchBlock">
+									<div class="select select--1">
+										<div class="select__trigger"> <span></span>
+											<div class="select__label">Выберите стеллаж</div>
+											<div class="select__arrow">
+												 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
 </svg>
+											</div>
+										</div>
+										<div class="select__drop">
+											<ul class="select__list scrollbar-inner">
+												<li>
+													<input id="selectStockroom_0" type="radio" name="select"/>
+													<label for="selectStockroom_0">056А</label>
+												</li>
+												<li>
+													<input id="selectStockroom_1" type="radio" name="select"/>
+													<label for="selectStockroom_1">056Б</label>
+												</li>
+												<li>
+													<input id="selectStockroom_2" type="radio" name="select"/>
+													<label for="selectStockroom_2">056В</label>
+												</li>
+												<li>
+													<input id="selectStockroom_3" type="radio" name="select"/>
+													<label for="selectStockroom_3">056Г</label>
+												</li>
+											</ul>
 										</div>
 									</div>
-									<div class="select__drop">
-										<ul class="select__list scrollbar-inner">
-											<li>
-												<input id="selectStockroom_0" type="radio" name="select"/>
-												<label for="selectStockroom_0">056А</label>
-											</li>
-											<li>
-												<input id="selectStockroom_1" type="radio" name="select"/>
-												<label for="selectStockroom_1">056Б</label>
-											</li>
-											<li>
-												<input id="selectStockroom_2" type="radio" name="select"/>
-												<label for="selectStockroom_2">056В</label>
-											</li>
-											<li>
-												<input id="selectStockroom_3" type="radio" name="select"/>
-												<label for="selectStockroom_3">056Г</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="select select--2">
-									<div class="select__trigger"> <span></span>
-										<div class="select__label">Выберите номер ячейки</div>
-										<div class="select__arrow">
-											 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+									<div class="select select--2">
+										<div class="select__trigger"> <span></span>
+											<div class="select__label">Выберите номер ячейки</div>
+											<div class="select__arrow">
+												 <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
 </svg>
+											</div>
+										</div>
+										<div class="select__drop">
+											<ul class="select__list scrollbar-inner">
+												<li>
+													<input id="selectCell_0" type="radio" name="select"/>
+													<label for="selectCell_0">1</label>
+												</li>
+												<li>
+													<input id="selectCell_1" type="radio" name="select"/>
+													<label for="selectCell_1">2</label>
+												</li>
+												<li>
+													<input id="selectCell_2" type="radio" name="select"/>
+													<label for="selectCell_2">3</label>
+												</li>
+												<li>
+													<input id="selectCell_3" type="radio" name="select"/>
+													<label for="selectCell_3">4</label>
+												</li>
+												<li>
+													<input id="selectCell_4" type="radio" name="select"/>
+													<label for="selectCell_4">5</label>
+												</li>
+												<li>
+													<input id="selectCell_5" type="radio" name="select"/>
+													<label for="selectCell_5">6</label>
+												</li>
+												<li>
+													<input id="selectCell_6" type="radio" name="select"/>
+													<label for="selectCell_6">7</label>
+												</li>
+												<li>
+													<input id="selectCell_7" type="radio" name="select"/>
+													<label for="selectCell_7">8</label>
+												</li>
+												<li>
+													<input id="selectCell_8" type="radio" name="select"/>
+													<label for="selectCell_8">9</label>
+												</li>
+												<li>
+													<input id="selectCell_9" type="radio" name="select"/>
+													<label for="selectCell_9">10</label>
+												</li>
+												<li>
+													<input id="selectCell_10" type="radio" name="select"/>
+													<label for="selectCell_10">11</label>
+												</li>
+												<li>
+													<input id="selectCell_11" type="radio" name="select"/>
+													<label for="selectCell_11">12</label>
+												</li>
+											</ul>
 										</div>
 									</div>
-									<div class="select__drop">
-										<ul class="select__list scrollbar-inner">
-											<li>
-												<input id="selectCell_0" type="radio" name="select"/>
-												<label for="selectCell_0">1</label>
-											</li>
-											<li>
-												<input id="selectCell_1" type="radio" name="select"/>
-												<label for="selectCell_1">2</label>
-											</li>
-											<li>
-												<input id="selectCell_2" type="radio" name="select"/>
-												<label for="selectCell_2">3</label>
-											</li>
-											<li>
-												<input id="selectCell_3" type="radio" name="select"/>
-												<label for="selectCell_3">4</label>
-											</li>
-											<li>
-												<input id="selectCell_4" type="radio" name="select"/>
-												<label for="selectCell_4">5</label>
-											</li>
-											<li>
-												<input id="selectCell_5" type="radio" name="select"/>
-												<label for="selectCell_5">6</label>
-											</li>
-											<li>
-												<input id="selectCell_6" type="radio" name="select"/>
-												<label for="selectCell_6">7</label>
-											</li>
-											<li>
-												<input id="selectCell_7" type="radio" name="select"/>
-												<label for="selectCell_7">8</label>
-											</li>
-											<li>
-												<input id="selectCell_8" type="radio" name="select"/>
-												<label for="selectCell_8">9</label>
-											</li>
-											<li>
-												<input id="selectCell_9" type="radio" name="select"/>
-												<label for="selectCell_9">10</label>
-											</li>
-											<li>
-												<input id="selectCell_10" type="radio" name="select"/>
-												<label for="selectCell_10">11</label>
-											</li>
-											<li>
-												<input id="selectCell_11" type="radio" name="select"/>
-												<label for="selectCell_11">12</label>
-											</li>
-										</ul>
+									<div class="input input--1">
+										<input type="text"/>
+										<div class="input__label">Укажите сколько контейнеров в ячейке</div>
 									</div>
-								</div>
-								<div class="input input--1">
-									<input type="text"/>
-									<div class="input__label">Укажите сколько контейнеров в ячейке</div>
-								</div>
-								<div class="addstockroom__row-2">
-									<div class="addstockroom__span">Нахождение товара будет выглядеть как:</div>
-									<div class="addstockroom__name copy-text">СК1Вавилова056А200-1/6784675<img src="img/copy.svg" alt=""/></div>
+									<div class="addstockroom__row-2">
+										<div class="addstockroom__span">Нахождение товара будет выглядеть как:</div>
+										<div class="addstockroom__name copy-text">СК1Вавилова056А200-1/6784675<img src="img/copy.svg" alt=""/></div>
+									</div>
 								</div>
 							</form>
 							<div class="addstockroom__add"> 

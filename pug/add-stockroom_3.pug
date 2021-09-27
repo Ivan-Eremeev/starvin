@@ -31,44 +31,45 @@ include ../html_blocks/header-enter.html
                     img(src="img/copy.svg", alt="")
                 .addstockroom__switch 
                   span Есть ли у вас в одной ячейке еще контейнеры?
-                  .switch 
-                    input#switch_1(type="checkbox" checked)
-                    label(for="switch_1") 
-                .select.select--1
-                  .select__trigger 
-                    span
-                    .select__label Выберите стеллаж
-                    .select__arrow 
-                      <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
-                      </svg>
-                  .select__drop
-                    ul.select__list.scrollbar-inner
-                      each val, index in ['056А', '056Б', '056В', '056Г',]
-                        li
-                          input(id="selectStockroom_" + index type="radio" name="select")
-                          label(for="selectStockroom_" + index)= val
-                .select.select--2
-                  .select__trigger 
-                    span
-                    .select__label Выберите номер ячейки
-                    .select__arrow 
-                      <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
-                      </svg>
-                  .select__drop
-                    ul.select__list.scrollbar-inner
-                      each val, index in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',]
-                        li
-                          input(id="selectCell_" + index type="radio" name="select")
-                          label(for="selectCell_" + index)= val
-                .input.input--1
-                  input(type="text")
-                  .input__label Укажите сколько контейнеров в ячейке
-                .addstockroom__row-2
-                  .addstockroom__span Нахождение товара будет выглядеть как:
-                  .addstockroom__name.copy-text СК1Вавилова056А200-1/6784675
-                    img(src="img/copy.svg", alt="")
+                  .switch.js-switch(data-block="#switchBlock")
+                    input#switch(type="checkbox")
+                    label(for="switch") 
+                .addstockroom__swicth-block#switchBlock
+                  .select.select--1
+                    .select__trigger 
+                      span
+                      .select__label Выберите стеллаж
+                      .select__arrow 
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
+                        </svg>
+                    .select__drop
+                      ul.select__list.scrollbar-inner
+                        each val, index in ['056А', '056Б', '056В', '056Г',]
+                          li
+                            input(id="selectStockroom_" + index type="radio" name="select")
+                            label(for="selectStockroom_" + index)= val
+                  .select.select--2
+                    .select__trigger 
+                      span
+                      .select__label Выберите номер ячейки
+                      .select__arrow 
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 1.81251L1.31249 7.5H0L7 0.5L14 7.5H12.6875L7 1.81251Z" fill="#6B7280"/>
+                        </svg>
+                    .select__drop
+                      ul.select__list.scrollbar-inner
+                        each val, index in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',]
+                          li
+                            input(id="selectCell_" + index type="radio" name="select")
+                            label(for="selectCell_" + index)= val
+                  .input.input--1
+                    input(type="text")
+                    .input__label Укажите сколько контейнеров в ячейке
+                  .addstockroom__row-2
+                    .addstockroom__span Нахождение товара будет выглядеть как:
+                    .addstockroom__name.copy-text СК1Вавилова056А200-1/6784675
+                      img(src="img/copy.svg", alt="")
               .addstockroom__add 
                 .btn-dashed.js-addbtn
                   <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">

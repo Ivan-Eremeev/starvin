@@ -84,6 +84,7 @@
     margin-bottom: 7px;
   }
   &__add {
+    margin-top: 40px;
     input {
       display: none;
     }
@@ -157,7 +158,6 @@
   }
   &__row-2 {
     margin-top: 20px;
-    margin-bottom: 40px;
   }
   &__span {
     font-size: 14px;
@@ -190,6 +190,9 @@
     span {
       max-width: 220px;
     }
+  }
+  &__swicth-block {
+    display: none;
   }
   @media (max-width: $break_sm) {
     &__col {

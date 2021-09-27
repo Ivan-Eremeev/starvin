@@ -2892,6 +2892,9 @@ body {
 .addstockroom .btn-dashed {
   margin-bottom: 7px;
 }
+.addstockroom__add {
+  margin-top: 40px;
+}
 .addstockroom__add input {
   display: none;
 }
@@ -2982,7 +2985,6 @@ body {
 }
 .addstockroom__row-2 {
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 .addstockroom__span {
   font-size: 14px;
@@ -3022,6 +3024,9 @@ body {
 }
 .addstockroom__switch span {
   max-width: 220px;
+}
+.addstockroom__swicth-block {
+  display: none;
 }
 @media (max-width: 767px) {
   .addstockroom__col:nth-child(2) {

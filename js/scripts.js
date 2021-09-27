@@ -224,18 +224,15 @@ $(document).ready(function () {
 
   // Появление блоков при активном switch
   function switchShowBlock() {
-    $('.js-switch').each(function () {
-      var $swich = $(this),
+    $('body').on('click', '.js-switch', function () {
+      var $this = $(this),
           time = 200;
-      $swich.find('input').on('change', function () {
-        if ($(this).prop('checked')) {
-          console.log('dd');
-          $($swich.data('block')).fadeIn(time);
-        }
-        else {
-          $($swich.data('block')).fadeOut(time);
-        }
-      })
+      if ($this.find('input').prop('checked')) {
+        $($this.data('block')).fadeIn(time);
+      }
+      else {
+        $($this.data('block')).fadeOut(time);
+      }
     })
   }
   switchShowBlock();
@@ -927,6 +924,7 @@ $(document).ready(function () {
   // Добавить копию блока при нажатии на кнопку
   function addBlock() {
     $('body').on('click', '.js-addbtn', function () {
+      $('.scrollbar-inner').scrollbar('destroy');
       var block = $(this).parent().prev('.js-addblock'),
           clone = block.clone();
       clone.find('.select__drop').attr('style', 'display: none;');
@@ -937,15 +935,14 @@ $(document).ready(function () {
         'margin-top' : '0'
       });
       clone.insertAfter(block).fadeIn(200);
-      setTimeout(() => {
-        console.log(clone.find('.scroll-content'));
-        $('.scrollbar-inner').scrollbar('destroy');
-        clone.find('.select').each(function () {
-          $(this).find('.select__drop').append($(this).find('.scroll-content'));
-        })
-        $('.scroll-wrapper').remove();
-        $('.scrollbar-inner').scrollbar();
-      }, 300);
+      $('.scrollbar-inner').scrollbar();
+      $('.js-addblock').each(function (i) {
+        var $this = $(this);
+        $this.find('.switch').attr('data-block', '#switchBlock' + i);
+        $this.find('.switch input').attr('id', 'switch' + i);
+        $this.find('.switch label').attr('for', 'switch' + i);
+        $this.find('.addstockroom__swicth-block').attr('id', 'switchBlock' + i);
+      })
     })
   }
   addBlock();
