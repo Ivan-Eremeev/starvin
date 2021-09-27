@@ -1636,12 +1636,26 @@ body {
 }
 .message__text {
   font-size: 13px;
-  line-height: 16px;
+  line-height: 20px;
   color: #6B7280;
   margin-bottom: 16px;
 }
+.message__text b {
+  color: #1F2937;
+}
 .message__btns button {
   margin: 0 6px;
+}
+.message--maw410 .modal_body {
+  max-width: 430px;
+}
+.message--maw410 .message__title {
+  font-size: 21px;
+  margin-bottom: 26px;
+}
+.message--maw410 .message__text {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .scheme .modal_body {
@@ -2994,6 +3008,20 @@ body {
 }
 .addstockroom__name img {
   margin-left: 10px;
+}
+.addstockroom__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #111827;
+  margin-top: 34px;
+}
+.addstockroom__switch span {
+  max-width: 220px;
 }
 @media (max-width: 767px) {
   .addstockroom__col:nth-child(2) {

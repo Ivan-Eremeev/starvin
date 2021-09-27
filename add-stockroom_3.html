@@ -140,6 +140,12 @@
 									<div class="addstockroom__span">Предварительное название: </div>
 									<div class="addstockroom__name addstockroom__name--big copy-text">СК1056А200-1<img src="img/copy.svg" alt=""/></div>
 								</div>
+								<div class="addstockroom__switch"> <span>Есть ли у вас в одной ячейке еще контейнеры?</span>
+									<div class="switch"> 
+										<input id="switch_1" type="checkbox" checked="checked"/>
+										<label for="switch_1"> </label>
+									</div>
+								</div>
 								<div class="select select--1">
 									<div class="select__trigger"> <span></span>
 										<div class="select__label">Выберите стеллаж</div>
@@ -257,7 +263,8 @@
 					</div>
 					<div class="addstockroom__nav"> <a class="addstockroom__navbtn addstockroom__navbtn--prev" href="add-stockroom_2.html"><svg width="22" height="12" viewBox="0 0 22 12"xmlns="http://www.w3.org/2000/svg">
 <path d="M21.725 5.33639L21.7242 5.3355L16.8256 0.460497C16.4586 0.0952938 15.865 0.0966529 15.4997 0.463684C15.1345 0.830669 15.1359 1.42425 15.5028 1.7895L18.7918 5.0625H1C0.482219 5.0625 0.0625 5.48222 0.0625 6C0.0625 6.51778 0.482219 6.9375 1 6.9375H18.7917L15.5029 10.2105C15.1359 10.5757 15.1345 11.1693 15.4998 11.5363C15.865 11.9034 16.4587 11.9047 16.8256 11.5395L21.7242 6.6645L21.7251 6.66361C22.0923 6.29714 22.0911 5.70164 21.725 5.33639Z"/>
-</svg><span>Предыдущий шаг</span></a><a class="addstockroom__navbtn addstockroom__navbtn--next" href="#"> <span>Сохранить склад</span><svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+</svg><span>Предыдущий шаг</span></a>
+						<div class="addstockroom__navbtn addstockroom__navbtn--next modal-trigger" data-modal="#addstockroom"><span>Сохранить склад</span><svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path d="M10.909 10.9092H4.09082V12.2728H10.909V10.9092Z"/>
 <path d="M4.09082 13.6362V14.318V14.9998H10.909V14.318V13.6362H4.09082Z"/>
@@ -269,12 +276,29 @@
 <rect width="15" height="15"/>
 </clipPath>
 </defs>
-</svg></a></div>
+</svg>
+						</div>
+					</div>
 				</div>
 				<!--	/addstockroom-->
 			</div>
 		</div>
 		<!--	/borderblock-->
+		<!-- modal message-->
+		<div class="message message--maw410 modal" id="addstockroom">
+			<div class="modal_body">
+				<form class="modal_content" action="#">
+					<div class="message__title">Сохранить склад</div>
+					<div class="message__text">Вы создали стеллаж склада <b>СК1Вавилон056А </b>с количеством ячеек <b>305</b></div>
+					<div class="message__btns"> 
+						<button class="new-btn new-btn--green" type="submit">Сохранить</button>
+						<div class="new-btn new-btn--black js-modal_close">Закрыть</div>
+					</div>
+					<div class="modal_close js-modal_close"></div>
+				</form>
+			</div>
+		</div>
+		<!-- /modal message-->
 	</div>
 </div>            <!-- Footer Top -->
             <div class="footer-top ptb_100">

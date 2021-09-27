@@ -12,13 +12,29 @@
   }
   &__text {
     font-size: 13px;
-    line-height: 16px;
+    line-height: 20px;
     color: #6B7280;
     margin-bottom: 16px;
+    b {
+      color: #1F2937;
+    }
   }
   &__btns {
     button {
       margin: 0 6px;
+    }
+  }
+  &--maw410 {
+    .modal_body {
+      max-width: 430px;
+    }
+    .message__title {
+      font-size: 21px;
+      margin-bottom: 26px;
+    }
+    .message__text {
+      font-size: 15px;
+      line-height: 20px;
     }
   }
 }

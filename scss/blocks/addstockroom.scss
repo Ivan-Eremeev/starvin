@@ -181,6 +181,16 @@
       margin-left: 10px;
     }
   }
+  &__switch {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #111827;
+    margin-top: 34px;
+    span {
+      max-width: 220px;
+    }
+  }
   @media (max-width: $break_sm) {
     &__col {
       &:nth-child(2) {
