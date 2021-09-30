@@ -14,6 +14,8 @@
     font-size: 15px;
     th {
       padding: 20px 5px;
+      color: #9CA3AF;
+      font-weight: 600;
     }
     td {
       padding: 10px 0;
@@ -38,7 +40,7 @@
     display: block;
     width: 23px;
     height: 23px;
-    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9321 5.93L17.0587 3.05713L8.15955 11.9673L11.065 14.8071L19.9321 5.93Z' fill='%23374151'/%3E%3Cpath d='M19.5317 0.594796L18.0592 2.06765L20.9326 4.94051L22.4051 3.46762C23.1972 2.67412 23.1986 1.38827 22.4051 0.594759C21.6118 -0.198523 20.325 -0.197996 19.5317 0.594796Z' fill='%23374151'/%3E%3Cpath d='M5.24353 17.7576L10.1457 15.691L7.29051 12.9004L5.24353 17.7576Z' fill='%23374151'/%3E%3Cpath d='M20.0937 8.43524L17.3223 11.1676V20.1932H2.68474V5.61564H11.8931L14.4577 2.90674H0.00012207V23.0002H20.0937V8.43524Z' fill='%23374151'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M19.9318 5.93L17.0583 3.05713L8.15918 11.9673L11.0646 14.8071L19.9318 5.93Z' fill='%239CA3AF'/%3E%3Cpath d='M19.5311 0.594796L18.0586 2.06765L20.932 4.94051L22.4045 3.46762C23.1966 2.67412 23.198 1.38827 22.4045 0.594759C21.6112 -0.198523 20.3244 -0.197996 19.5311 0.594796Z' fill='%239CA3AF'/%3E%3Cpath d='M5.24316 17.7576L10.1454 15.691L7.29014 12.9004L5.24316 17.7576Z' fill='%239CA3AF'/%3E%3Cpath d='M20.0936 8.43524L17.3222 11.1676V20.1932H2.68462V5.61564H11.893L14.4576 2.90674H0V23.0002H20.0936V8.43524Z' fill='%239CA3AF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='23' height='23' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -85,5 +87,15 @@
       fill: $green;
       transition: 0.3s;
     }
+  }
+  &__dotted {
+    display: inline-block;
+    border-bottom: 1px dotted #1D4ED8;
+    color: #1D4ED8;
+  }
+  &__underline {
+    display: inline-block;
+    border-bottom: 1px solid #1D4ED8;
+    color: #1D4ED8;
   }
 }

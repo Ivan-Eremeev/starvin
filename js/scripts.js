@@ -779,38 +779,6 @@ $(document).ready(function () {
     $('.scrollbar-inner').scrollbar();
   }
 
-  // // Селекты
-  // function select() {
-  //   $('.select').each(function () {
-  //     var $select = $(this),
-  //         trigger = $select.find('.select__trigger'),
-  //         drop = $select.find('.select__drop'),
-  //         input = drop.find('input')
-  //         time = 100;
-  //     trigger.on('click', function () {
-  //       trigger.toggleClass('active');
-  //       drop.fadeToggle(time);
-  //     })
-  //     $(document).mouseup(function (e) {
-  //       if (!trigger.is(e.target)
-  //         && trigger.has(e.target).length === 0
-  //         && !drop.is(e.target)
-  //         && drop.has(e.target).length === 0) {
-  //         trigger.removeClass('active');
-  //         drop.fadeOut(time);
-  //       }
-  //     });
-  //     input.on('change', function () {
-  //       if ($(this).is(':checked')) {
-  //         trigger.find('span').text($(this).siblings('label').text());
-  //       }
-  //       trigger.removeClass('active');
-  //       drop.fadeOut(time);
-  //     })
-  //   })
-  // }
-  // select();
-
   // Селекты
   function select() {
     var time = 100,
